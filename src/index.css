@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  body {
+    overflow-x: hidden;
+  }
+  .cus-container {
+    @apply px-8 lg:px-24 w-full;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .menu_a {
+    @apply px-6 py-1 md:px-4 lg:px-6 duration-300 ease-linear font-helvetica text-lg  md:text-sm after:absolute lg:text-base xl:text-lg after:top-0 before:top-0 font-medium uppercase text-white  hover:text-highlight hover:after:bg-highlight hover:before:!bg-highlight md:text-menu relative after:bg-transparent after:w-2 after:h-full after:rounded-bl-[100%] after:right-0 before:absolute before:bg-transparent before:w-2 before:h-full before:rounded-br-[100%] before:left-0;
+  }
+  .menu_active {
+    @apply !text-highlight relative after:absolute after:bg-highlight after:w-2 after:h-full after:rounded-bl-[100%] after:right-0 after:top-0 before:top-0 before:absolute before:bg-highlight before:w-2 before:h-full before:rounded-br-[100%] before:left-0;
+  }
+  .f_menu {
+    @apply text-[#E0DBCE] font-helvetica font-normal text-xs sm:text-base pb-1 md:mb-4 inline-block duration-300 ease-linear hover:text-highlight relative after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-highlight hover:after:w-full after:duration-300 after:ease-linear;
+  }
+}
+.slick-slider .slick-track {
+  display: flex !important;
+  align-items: center;
+}
+
+.stroke {
+  -webkit-text-stroke: 1px white;
+  fill: transparent;
+  color: transparent;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .big-product .slick-active {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+.big-product .slick-active {
+  margin-right: 50px;
+  margin-left: -50px;
+}
+.heroSection video {
+  transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -o-transform: scale(2.5);
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -moz-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -ms-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -o-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.heroSection .slick-active video {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -moz-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -ms-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -o-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.slider-track {
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.circleAnimation {
+  animation: circleAnimation 4s linear infinite;
+  -webkit-animation: circleAnimation 4s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* .mobile-section .BackgroundVideo{
+  left: 0px !important;
+  width: 500px !important;
+  height: 1024px !important;
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+} */
+.mobile-section video {
+  left: 0px !important;
+  /*border-radius: 55px;
+  width: 100%;
+  height: 100%;
+  */
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 200%;
+  height: 200%;
+}
+
+.preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* You can change the background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 559px; /* You can adjust the width of the progress bar */
+  height: 10px;
+  background-color: transparent; /* You can change the background color of the progress bar */
+  border-radius: 10px;
+  border: 2px solid #f7381e;
+}
+
+.progress {
+  height: 100%;
+  background-color: #f7381e; /* You can change the color of the progress indicator */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* You can change the color of the percentage text */
+}
+
+.loading-img {
+  position: relative;
+}
+.loading-img::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  background: #000000;
+  height: 100%;
+  transform-origin: left;
+  content: "";
+  animation: imgFill 5s 1 linear 0s;
+  -webkit-animation: imgFill 5s 1 linear 0s;
+}
+
+@keyframes imgFill {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 40s linear infinite;
+  animation-delay: 1s;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+
+.blur-shap {
+  filter: blur(80px);
+}
+.titi {
+  color: blue;
+}
+.yoy {
+  color: #000000;
+}
+
+.advshap {
+  filter: blur(15px);
+  -webkit-filter: blur(8px);
+}
+
+/* .video-controle{
+  height: 1000px !important;
+} */
+
+.slide-active{
+  animation:slidefadeUP .4s linear forwards;
+
+  -webkit-animation:slidefadeUP .4s linear forwards;
+}
+@keyframes slidefadeUP{
+  from{
+    transform: scale(.7);
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -ms-transform: scale(.7);
+    -o-transform: scale(.7);
+}
+  to{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+
+}
+}
+.slideBox .sActive{
+  position: absolute;
+  bottom: 0;
+}
+.slideBox .sActive:nth-child(1) {
+  top: 0;
+  z-index: -1;
+}
+.slideBox .sActive:nth-child(2){
+  transform: scale(0.9) !important;
+  top: 60px;
+  z-index: -2;
+  -webkit-transform: scale(0.9) !important;
+  -moz-transform: scale(0.9) !important;
+  -ms-transform: scale(0.9) !important;
+  -o-transform: scale(0.9) !important;
+}
+
+.slideBox .sActive:nth-child(3) {
+  transform: scale(.8)!important;
+  top: 120px;
+  z-index: -3;
+  -webkit-transform: scale(.8)!important;
+  -moz-transform: scale(.8)!important;
+  -ms-transform: scale(.8)!important;
+  -o-transform: scale(.8) !important;
+}
+
+.two_menu_active{
+  background: #F7381E;
+  border-radius: 24px;
+}
+
