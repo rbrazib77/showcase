@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Artusi';
+    src: local('Helvetica Now Display Hairline'), local('Helvetica-Now-Display-Hairline'),
+        url('Artusi-Medium-Italic-trial-BF63f6e10b2606e.ttf') format('woff2'),
+        url('Artusi-Medium-trial-BF63f6e10c9e3f1.ttf') format('woff');
+    font-weight: 500;
+    font-style: italic;
+  }
+@font-face {
+    font-family: 'Artusi';
+    src: local('Artusi-Regular-trial-BF63f6e10cb28aa.ttf'), local('Artusi-Regular-trial-BF63f6e10cb28aa.ttf'),
+        url('Artusi-Regular-trial-BF63f6e10cb28aa.ttf') format('ttf'),
+        url('Artusi-Medium-trial-BF63f6e10c9e3f1.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Artusi';
+    src: local('Artusi-Light-trial-BF63f6e10cb9969.ttf'), local('Artusi-Light-Italic-trial-BF63f6e10d6ddc7.ttf'),
+        url('Artusi-Light-Italic-trial-BF63f6e10d6ddc7.ttf') format('ttf'),
+        url('Artusi-Light-trial-BF63f6e10cb9969.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Artusi';
+    src: local('Artusi-Light-trial-BF63f6e10cb9969.ttf'), local('Artusi-Light-Italic-trial-BF63f6e10d6ddc7.ttf'),
+        url('Artusi-Grande-Light-trial-BF63f6e0f9c8ba5.ttf') format('ttf'),
+        url('Artusi-Light-trial-BF63f6e10cb9969.ttf') format('ttf');
+    font-weight: 100;
+    font-style: italic;
+  }
+@font-face {
+    font-family: 'Artusi';
+    src: local('Artusi-Grande-Italic-trial-BF63f6e0fc092b1.ttf'), local('Artusi-Grande-Italic-trial-BF63f6e0fc092b1.ttf'),
+        url('Artusi-Grande-Italic-trial-BF63f6e0fc092b1.ttf') format('ttf');
+    font-weight: 100;
+    font-style: italic;
+  }
+@font-face {
+    font-family: 'Artusi-Grande';
+    src: local('Artusi-Grande-Extralight-Italic-trial-BF63f6e0fdee52a.ttf'), local('Artusi-Grande-Extralight-Italic-trial-BF63f6e0fdee52a.ttf'),
+        url('Artusi-Grande-Extralight-Italic-trial-BF63f6e0fdee52a.ttf') format('ttf');
+    font-weight: 100;
+    font-style: italic;
+  }
