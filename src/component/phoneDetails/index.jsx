@@ -8,7 +8,7 @@ const index = () => {
       <picture>
         <img src={phonedetail} alt="" />
       </picture>
-      <div className="absolute top-0 left-[-100px]">
+      <div className="absolute top-0 left-0">
         <div className="circle w-24 md:w-40 lg:w-52">
           <picture className="">
             <img

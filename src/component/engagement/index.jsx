@@ -5,9 +5,9 @@ const index = () => {
   return (
     <section className="bg-[#000000] py-[174px]">
       <div className="px-[160px]">
-        <div className="flex justify-between">
-          <div className="w-[623px] pt-14">
-            <h2 className="font-artusiG italic text-[80px] leading-[180px] text-white">
+        <div className="flex items-center">
+          <div className="w-[623px]">
+            <h2 className="font-artusiG font-bold italic text-[80px] leading-[180px] text-white pb-[49px]">
               Engagement
             </h2>
             <p className=" font-artusi w-[663px] pr-56 text-xl leading-[141%] text-[#E0DBCE] pb-14">

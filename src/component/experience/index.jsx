@@ -4,18 +4,18 @@ import experience from "../../assets/images/experience/experience1.png";
 const index = () => {
   return (
     <section className="bg-[#191919] py-[174px]">
-      <div className="container">
-        <div className="flex justify-between">
-          <div className="w-[815px] text-red-600">
+      <div className="px-[160px]">
+        <div className="flex items-center">
+          <div className="w-[815px">
             <picture>
-              <img src={experience} alt="" />
+              <img src={experience} className="w-full" alt=""/>
             </picture>
           </div>
-          <div className="w-[623px] pt-14">
-            <h2 className="font-artusiG font-medium italic  text-[80px] leading-[180%] text-white">
+          <div className="w-[623px] pl-[162px]">
+            <h2 className="font-artusiG font-bold italic text-[80px] leading-[160%] text-white pb-[49px]">
               Experience
             </h2>
-            <p className=" font-artusi w-[623px] pr-48 text-xl leading-[141%] text-[#E0DBCE] pb-14">
+            <p className=" font-artusi w-[623px] pr-48 text-xl leading-[141%] text-[#E0DBCE] pb-12">
               <span className="italic">
                 The future of fashion is experiential.
               </span>{" "}

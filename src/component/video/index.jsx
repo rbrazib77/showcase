@@ -27,7 +27,7 @@ export default function Video() {
   return (
     <>
     <section className='bg-black py-10'>
-        <div className="cus-container relative z-10">
+        <div className="relative z-10">
              <video src={stage} ref={videoRef} id="myVideo" controls muted onClick={handleVideoClick} className='w-full h-full'></video>  
              {!isOpen &&
              <span className='absolute top-1/2 left-1/2 cursor-pointer' onClick={handleVideoClick}><FaPlayCircle  className='text-white text-6xl'/></span>     

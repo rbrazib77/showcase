@@ -80,7 +80,7 @@ export default function Menubar() {
                           <NavLink className={({ isActive }) =>
                           isActive ? "two_menu_active" : ""
                         } to='solution'>
-                          <button className="bg-transparent text-white px-6 py-3 rounded-3xl text-sm font-helvetica font-medium hover:bg-highlight  duration-300 ease-linear">
+                          <button className="bg-transparent text-white px-6 py-3  rounded-3xl text-sm font-helvetica font-medium hover:bg-highlight  duration-300 ease-linear">
                             FEATURES
                           </button>
                           </NavLink>

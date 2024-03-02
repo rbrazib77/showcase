@@ -10,7 +10,7 @@ import f2 from "../../assets/images/f2.png";
 export default function Product() {
   return (
     <>
-      <section className="bg-black py-40">
+      <section className="bg-black px-[100px] py-40">
         <div className="pl-[100px] pr-[78px] px-6 md:px-0">
           <div className="flex flex-wrap-reverse flex-row-reverse lg:flex-row justify-between items-center">
             <div className="lg:w-1/2">

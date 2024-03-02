@@ -30,7 +30,7 @@ const index = () => {
             augmented reality.
           </p>
         </div>
-        <div className="flex justify-between m-auto items-center  w-[1683px] border-b-[1px] border-[#363636] pb-8">
+        <div className="flex justify-between items-center pl-[150px] pr-[87px]  border-b-[1px] border-[#363636] pb-8">
           <div className="flex items-center">
             <li className="list-none text-[#B7B7B7] text-6xl pr-[65px] ">
               01.
@@ -64,7 +64,7 @@ const index = () => {
             )}
           </div>
         </div>
-        <div className="flex justify-between m-auto mt-[70px] mb-[70px] items-center  w-[1683px] border-b-[1px] border-[#363636] pb-8">
+        <div className="flex justify-between m-auto mt-[70px] mb-[70px] items-center pl-[150px] pr-[87px] border-b-[1px] border-[#363636] pb-8">
           <div className="flex items-center">
             <li className="list-none text-[#B7B7B7] text-6xl pr-[65px] ">
               02.
@@ -98,7 +98,7 @@ const index = () => {
             )}
           </div>
         </div>
-        <div className="flex justify-between m-auto items-center  w-[1683px] border-b-[1px] border-[#363636] pb-8">
+        <div className="flex justify-between m-auto items-center  pl-[150px] pr-[87px] border-b-[1px] border-[#363636] pb-8">
           <div className="flex items-center">
             <li className="list-none text-[#B7B7B7] text-6xl pr-[65px] ">
               03.

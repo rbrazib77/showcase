@@ -4,18 +4,18 @@ import interaction from "../../assets/images/interaction/interaction.png";
 const index = () => {
   return (
     <section className="bg-[#191919] py-[174px]">
-      <div className="container">
-        <div className="flex justify-between">
-          <div className="w-[815px] text-red-600">
+      <div className="px-[160px]">
+        <div className="flex items-center">
+          <div className="w-[815px">
             <picture>
-              <img src={interaction} alt="" />
+              <img src={interaction} className="w-full" alt="" />
             </picture>
           </div>
-          <div className="w-[623px] pt-14">
-            <h2 className="font-artusiG italic text-[80px] leading-[160%] text-white">
+          <div className="w-[623px] pl-[110px] ">
+            <h2 className="font-artusiG font-bold italic text-[80px] leading-[160%] text-white pb-[49px]">
               Interaction
             </h2>
-            <p className="font-artusi w-[623px] pr-52 text-xl leading-[141%] text-[#E0DBCE] pb-14">
+            <p className="font-artusi w-[623px] pr-52  text-xl leading-[141%] text-[#E0DBCE] pb-14">
               With showcase X it is now possible for consumers to engage with a
               particular product as if it was right there with them, wherever
               they may be in the world, considering different aspects of a
