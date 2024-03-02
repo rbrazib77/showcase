@@ -57,7 +57,7 @@ export default function HeroSection() {
         </Slider>
         <div className="content absolute top-24 md:-top-10 w-full">
           <div className="absolute top-[250px] right-0">
-            <div className="">
+            <div className="cus-container">
               <div>
                 <FaTwitter className="w-16 h-16 p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
               </div>
@@ -69,7 +69,7 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="cus-containe ">
+          <div className="cus-container">
             <div className="md:flex justify-between">
               <div className=" md:w-3/5 lg:w-2/5">
                 <div className="box inline-block w-[600px] bg-gradient-to-t to-[#6767675e] via-[#74747433] from-[#ffffff22] xl:py-9 xl:px-[100] rounded-2xl sm:p-8 backdrop-blur-sm border border-[#676767] mt-32 sm:mt-[50%] md:mt-[80%] md:mr-1 lg:mr-0 lg:mt-[85%]">
@@ -85,7 +85,9 @@ export default function HeroSection() {
                     Launching February 2024
                   </h4>
                 </div>
-                <h4 className="text-3xl text-[#FFFFFF] font-medium pt-6">We are backed by</h4>
+                <h4 className="text-3xl text-[#FFFFFF] font-medium pt-6">
+                  We are backed by
+                </h4>
               </div>
             </div>
           </div>

@@ -3,6 +3,9 @@ import bg from "../../assets/images/bg.png";
 import textLogo from "../../assets/images/textLogo.png";
 import Button from "../button";
 import { FaCheckCircle } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import Slider from "react-slick";
 import VideoPlayer from "react-background-video-player";
 import video1 from "../../assets/video/hero/1.webm";
@@ -53,7 +56,20 @@ export default function HeroSection() {
           </div>
         </Slider>
         <div className="content  absolute top-24 md:-top-10 w-full">
-          <div className="container ">
+        <div className="absolute top-[250px] right-0">
+            <div className="cus-container">
+              <div>
+                <FaTwitter className="w-16 h-16 p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+              </div>
+              <div className="my-7">
+                <FaInstagram className="w-16 h-16 p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+              </div>
+              <div>
+                <FaLinkedin className="w-16 h-16 p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+              </div>
+            </div>
+          </div>
+          <div className="cus-container">
             <div className="md:flex justify-between">
               <div className=" md:w-3/5 lg:w-2/5">
                 <div className="box inline-block w-[577px] bg-gradient-to-t to-[#6767675e] via-[#74747433] from-[#ffffff22] p-6 rounded-2xl sm:p-8 backdrop-blur-sm border border-[#676767] mt-32 sm:mt-[50%] md:mt-[80%] md:mr-1 lg:mr-0 lg:mt-[85%]">

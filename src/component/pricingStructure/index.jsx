@@ -3,7 +3,7 @@ import Card from "../card";
 
 const index = () => {
   return (
-    <section className="bg-black pt-[153px] pb-[303px]">
+    <section className="bg-black px-[175px] pt-[153px] pb-[303px]">
       <div className="">
         <p className="w-[1085px] px-11 text-center m-auto text-6xl text-[#FFFFFF] leading-[120%]">
           Our straightforward{" "}
