@@ -4,7 +4,7 @@ import Brand from "../component/brand";
 import Mission from "../component/mission";
 import Foundingteam from "../component/foundingteam";
 import Journey from "../component/journey";
-// import Video_two from "../component/video_two";
+import Video_two from "../component/video_two";
 import Advisors from "../component/advisors";
 import Partners from "../component/partners";
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
       <Mission/>
       <Foundingteam/>
       <Journey/>
-      {/* <Video_two/> */}
+      <Video_two/>
       <Advisors/>
       <Partners/>
     </div>

@@ -4,19 +4,47 @@ import stage from "../../assets/video/black.webm";
 import { FaPlayCircle } from "react-icons/fa";
 const index = () => {
   const [isOpen, setOpen] = useState(false);
-  const videoRef = useRef(null);
+  const [isOpenTwo, setOpenTwo] = useState(false);
+  const [isOpenThree, setOpenThree] = useState(false);
+
+  const videoRefone = useRef(null);
+  const videoReftwo = useRef(null);
+  const videoRefthree = useRef(null);
 
   const handleVideoClick = () => {
-    const video = videoRef.current;
-
-    if (video.paused) {
-      video.play();
+    const videoOne = videoRefone.current;
+    if (videoOne.paused) {
+      videoOne.play();
       setOpen(!isOpen);
     } else {
-      video.pause();
+      videoOne.pause();
       setOpen(!isOpen);
     }
+  }; 
+  const handleVideoTwoClick = () => {
+    const videoTwo = videoReftwo.current;
+    if (videoTwo.paused) {
+      videoTwo.play();
+      setOpenTwo(!isOpenTwo);
+    } else {
+      videoTwo.pause();
+      setOpenTwo(!isOpenTwo);
+    }
   };
+
+  const handleVideoThreeClick = () => {
+    const videoThree = videoRefthree.current;
+    if (videoThree.paused) {
+      videoThree.play();
+      setOpenThree(!isOpenThree);
+    } else {
+      videoThree.pause();
+      setOpenThree(!isOpenThree);
+    }
+  };
+
+
+
   return (
     <section className="bg-black pb-[440px]">
       <div>
@@ -47,7 +75,7 @@ const index = () => {
           <div className="w-[356px] h-[326px] relative z-10">
             <video
               src={stage}
-              ref={videoRef}
+              ref={videoRefone}
               id="myVideo"
               controls
               muted
@@ -81,17 +109,17 @@ const index = () => {
           <div className="w-[356px] h-[326px] relative z-10">
             <video
               src={stage}
-              ref={videoRef}
+              ref={videoReftwo}
               id="myVideo"
               controls
               muted
-              onClick={handleVideoClick}
+              onClick={handleVideoTwoClick}
               className="w-full h-full"
             ></video>
-            {!isOpen && (
+            {!isOpenTwo && (
               <span
                 className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
-                onClick={handleVideoClick}
+                onClick={handleVideoTwoClick}
               >
                 <FaPlayCircle className="text-white text-3xl" />
               </span>
@@ -115,17 +143,17 @@ const index = () => {
           <div className="w-[356px] h-[326px] relative z-10">
             <video
               src={stage}
-              ref={videoRef}
+              ref={videoRefthree}
               id="myVideo"
               controls
               muted
-              onClick={handleVideoClick}
+              onClick={handleVideoThreeClick}
               className="w-full h-full"
             ></video>
-            {!isOpen && (
+            {!isOpenThree && (
               <span
                 className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
-                onClick={handleVideoClick}
+                onClick={handleVideoThreeClick}
               >
                 <FaPlayCircle className="text-white text-3xl" />
               </span>
