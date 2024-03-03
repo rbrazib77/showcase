@@ -7,7 +7,7 @@ const index = () => {
       <div className="px-[160px]">
         <div className="flex items-center">
           <div className="w-[623px]">
-            <h2 className="font-artusiG font-bold italic text-[80px] leading-[180px] text-white pb-[49px]">
+            <h2 className="font-artusiG font-bold italic text-[80px] leading-[180px] text-white">
               Engagement
             </h2>
             <p className=" font-artusi w-[663px] pr-56 text-xl leading-[141%] text-[#E0DBCE] pb-14">
