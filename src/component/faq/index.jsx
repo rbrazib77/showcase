@@ -76,11 +76,11 @@ export default function Faqs() {
 
                        <span className="flex gap-3">
                         {faqs===i && 
-                       <span className="w-5 h-9 bg-red-500 block rounded-br-[100%]"></span>
+                       <span className="w-5 h-9 bg-red-500 block rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  to-highlight  to-[112%] from-[-26%] from-[#000000]"></span>
                         }
                        {item.title}
                        {faqs===i && 
-                       <span className="w-5 h-9 bg-red-500 block rounded-bl-[100%]"></span>
+                       <span className="w-5 h-9 bg-red-500 block rounded-bl-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  to-highlight  to-[112%] from-[-26%] from-[#000000]"></span>
                       }
                        </span>
                        
