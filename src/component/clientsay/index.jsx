@@ -57,7 +57,7 @@ export default function Slider() {
   console.log(sliderIndex);
 
   return (
-    <section className="bg-black px-[224px] pb-[120px] relative">
+    <section className="bg-black  pb-[120px] relative">
       <h2 className="font-artusiG  leading-[120%] pb-7 text-center text-[60px] text-[#FFFFFF]">
         What Our{" "}
         <span className="text-[#F7381E] font-bold italic">Clients Say</span>
@@ -67,7 +67,7 @@ export default function Slider() {
         said, partnering with showcase X. on
       </p>
 
-      <div className="relative slideBox z-[9999] h-[553px]" ref={slideBox}>
+      <div className="relative slideBox z-[9999] h-[553px] m-auto w-[1475px]" ref={slideBox}>
         {/*card */}
         <div className="slideItem bg-[#E0DBCE] sActive overflow-hidden absolute   h-[100%] top-[-100px] w-[100%] shadow-2xl shadow-[#00000040] rounded-[10px]">
           <span className="absolute z-[-7777] -top-24 left-0">

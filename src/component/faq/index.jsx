@@ -71,7 +71,7 @@ export default function Faqs() {
                     >
                       <h4
                         onClick={() => handleAccordion(i)}
-                        className="cursor-pointer text-[#FFFFFF] text-2xl font-medium font-helvetica flex justify-between relative after:w-5 after:h-9 after:absolute after:content  after:rounded-br-[100%] after:bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  after:to-highlight after:left-0 after:top-0 after:to-[112%] after:from-[-26%] after:from-[#000000] "
+                        className="cursor-pointer text-[#FFFFFF] text-2xl font-medium font-helvetica flex justify-between "
                       >
                         {++i}
                         {item.title}{" "}
