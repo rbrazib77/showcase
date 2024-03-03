@@ -53,59 +53,70 @@ export default function Menubar() {
                     <ul className="space-y-6 md:space-y-0 md:flex justify-center">
                       <NavLink
                         className={({ isActive }) =>
-                          isActive ? "menu_active" : ""
+                          isActive ? "menu_a menu_active" : "menu_a"
                         }
                         to="/"
                       >
                         <li>
-                          <a className="menu_a" href="/">
+                          <a className="" href="/">
                             Home
                           </a>
                         </li>
                       </NavLink>
                       <NavLink
                         className={({ isActive }) =>
-                          isActive ? "menu_active" : ""
+                          isActive ? "menu_a menu_active" : "menu_a"
                         }
                         to="/solution"
                       >
                         <li onClick={handelChang}>
-                          <a className="menu_a relative" href="#">
+                          <a className="relative" href="#">
                             Solution
                           </a>
                         </li>{" "}
                       </NavLink>
                       {show && (
-                        <div className="rounded-[25px] bg-[#8D8D8D30] flex justify-center absolute top-16 left-[50%] translate-x-[-50%]">
-                          <NavLink className={({ isActive }) =>
-                          isActive ? "two_menu_active" : ""
-                        } to='solution'>
-                          <button className="bg-transparent text-white px-6 py-3  rounded-3xl text-sm font-helvetica font-medium hover:bg-highlight  duration-300 ease-linear">
-                            FEATURES
-                          </button>
+                        <div className="rounded-[25px] bg-[#8D8D8D30] flex justify-center gap-14 absolute top-16 left-[50%] translate-x-[-50%]">
+                          <NavLink
+                            className={({ isActive }) =>
+                              isActive ? "two_menu_active" : ""
+                            }
+                            to="solution"
+                          >
+                            <button className="bg-transparent text-white px-6 py-3  rounded-3xl text-sm font-helvetica font-medium hover:bg-highlight  duration-300 ease-linear">
+                              FEATURES
+                            </button>
                           </NavLink>
-                          <NavLink className={({ isActive }) =>
-                          isActive ? "two_menu_active" : ""
-                        } to='howitworks'>
-                          <button className="bg-transparent text-white px-6 py-3 mx-14 rounded-3xl text-sm font-helvetica font-medium hover:bg-highlight  duration-300 ease-linear">
-                            HOW IT WORKS
-                          </button>
+                          <NavLink
+                            className={({ isActive }) =>
+                              isActive ? "two_menu_active" : ""
+                            }
+                            to="howitworks"
+                          >
+                            <button className="bg-transparent text-white px-6 py-3  rounded-3xl text-sm font-helvetica font-medium hover:bg-highlight  duration-300 ease-linear">
+                              HOW IT WORKS
+                            </button>
                           </NavLink>
-                          <NavLink className={({ isActive }) =>
-                          isActive ? "two_menu_active" : ""
-                        } to='/pricing'>
-                          <button className="bg-transparent text-white px-6 py-3 rounded-3xl text-sm font-helvetica font-medium hover:bg-highlight  duration-300 ease-linear">
-                            PRICING
-                          </button>
+                          <NavLink
+                            className={({ isActive }) =>
+                              isActive ? "two_menu_active" : ""
+                            }
+                            to="/pricing"
+                          >
+                            <button className="bg-transparent text-white px-6 py-3 rounded-3xl text-sm font-helvetica font-medium hover:bg-highlight  duration-300 ease-linear">
+                              PRICING
+                            </button>
                           </NavLink>
                         </div>
                       )}
                       <NavLink
-                        className={({ isActive }) => (isActive ? "menu_active" : "")}
+                        className={({ isActive }) =>
+                          isActive ? "menu_a menu_active" : "menu_a"
+                        }
                         to="/about"
                       >
                         <li>
-                          <a className="menu_a" href="#">
+                          <a className="" href="#">
                             About US
                           </a>
                         </li>

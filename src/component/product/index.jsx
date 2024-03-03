@@ -2,6 +2,7 @@ import React from "react";
 import img1 from "../../assets/images/product/product.png";
 import p1 from "../../assets/images/product/p1.webp";
 import product1 from "../../assets/images/product/product1.png";
+import p_shap from "../../assets/images/product/p-shap.png";
 import circle from "../../assets/images/product/circle.png";
 import f1 from "../../assets/images/f1.png";
 import f3 from "../../assets/images/f3.png";
@@ -10,7 +11,10 @@ import f2 from "../../assets/images/f2.png";
 export default function Product() {
   return (
     <>
-      <section className="bg-black px-[100px] py-40">
+      <section className="bg-black relative px-[100px] py-40">
+        <span className="absolute top-24 right-0">
+          <img src={p_shap} alt="" />
+        </span>
         <div className="pl-[100px] pr-[78px] px-6 md:px-0">
           <div className="flex flex-wrap-reverse flex-row-reverse lg:flex-row justify-between items-center">
             <div className="lg:w-1/2">

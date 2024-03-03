@@ -8,7 +8,7 @@ import faqimg from "../../assets/images/faq/faq.png";
 import { motion, cubicBezier } from "framer-motion";
 
 export default function Faqs() {
-  let [faqs, setFaqs] = useState(1);
+  let [faqs, setFaqs] = useState(0);
 
   let handleAccordion = (i) => {
     // if(faqs == 0 || faqs){
@@ -17,7 +17,7 @@ export default function Faqs() {
     // }
 
     if (faqs === i) {
-      setFaqs(1);
+      setFaqs(0);
     }
     setFaqs(i);
   };
@@ -73,8 +73,17 @@ export default function Faqs() {
                         onClick={() => handleAccordion(i)}
                         className="cursor-pointer text-[#FFFFFF] text-2xl font-medium font-helvetica flex justify-between "
                       >
-                        {++i}
-                        {item.title}{" "}
+
+                       <span className="flex gap-3">
+                        {faqs===i && 
+                       <span className="w-5 h-9 bg-red-500 block rounded-br-[100%]"></span>
+                        }
+                       {item.title}
+                       {faqs===i && 
+                       <span className="w-5 h-9 bg-red-500 block rounded-bl-[100%]"></span>
+                      }
+                       </span>
+                       
                         <span className="cursor-pointer">
                           {faqs === i ? (
                             <IoIosArrowUp
