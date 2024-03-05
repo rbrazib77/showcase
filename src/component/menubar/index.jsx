@@ -18,11 +18,13 @@ export default function Menubar() {
           <div className="md:flex justify-between items-center">
             <div className="inline-block md:w-1/6">
               <div className="logo">
+                <NavLink to="/">
                 <a href="#">
                   <picture>
                     <img className="w-36 md:w-52" src={logo} alt={logo} />
                   </picture>
                 </a>
+                </NavLink>
               </div>
             </div>
             <div className="mobile_menu inline-block md:hidden float-right cursor-pointer">
@@ -76,7 +78,7 @@ export default function Menubar() {
                         </li>{" "}
                       </NavLink>
                       {show && (
-                        <div className="rounded-[25px] bg-[#8D8D8D30] flex justify-center gap-14 absolute top-16 left-[50%] translate-x-[-50%]">
+                        <div className="rounded-[25px] bg-[#8D8D8D30] p-2 flex justify-center gap-14 absolute top-16 left-[50%] translate-x-[-50%]">
                           <NavLink
                             className={({ isActive }) =>
                               isActive ? "two_menu_active" : ""

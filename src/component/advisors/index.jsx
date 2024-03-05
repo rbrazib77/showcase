@@ -9,7 +9,7 @@ import advisors6 from "../../assets/images/advisors/advisors6.png";
 const index = () => {
   return (
     <section className="bg-black py-32 ">
-      <div className="container">
+      <div className="cus-container">
         <h2 className="text-[#FFFFFF] font-helvetica font-medium leading-[120%] pb-6 text-center text-6xl ">
           Advisors
         </h2>

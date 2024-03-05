@@ -29,7 +29,9 @@ export default function Contact(props) {
               </div>
               <div className="md:w-1/2 pt-28 pr-10">
                 <div className="btn text-center">
-                <button className='font-helvetica bg-highlight w-full duration-300 ease-linear font-medium text-2xl lg:text-4xl  text-white relative py-4 lg:py-8 after:absolute after:bg-black after:w-0 hover:after:h-2/3 hover:before:h-2/3 hover:after:w-10 after:h-0 after:duration-100 after:ease-linear after:rounded-bl-[200%] after:right-0 after:top-0 before:top-0 before:absolute before:bg-black before:w-0 hover:before:w-10 before:duration-100 before:ease-linear before:h-0 before:rounded-br-[100%] before:left-0 '>Book A Demo</button>
+                  <button className="font-helvetica bg-highlight w-full duration-300 ease-linear font-medium text-2xl lg:text-4xl  text-white relative py-4 lg:py-8 after:absolute after:bg-black after:w-0 hover:after:h-[70px] hover:before:h-[70px] hover:after:w-11 after:h-0 after:duration-100 after:ease-linear after:rounded-bl-[200%] after:right-0 after:top-0 before:top-0 before:absolute before:bg-black before:w-0 hover:before:w-11 before:duration-100 before:ease-linear before:h-0 before:rounded-br-[100%] before:left-0 ">
+                    Book A Demo
+                  </button>
                 </div>
               </div>
             </div>
@@ -39,5 +41,3 @@ export default function Contact(props) {
     </>
   );
 }
-
-

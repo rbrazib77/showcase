@@ -13,10 +13,10 @@
     margin: 0 auto;
   }
   .menu_a {
-    @apply px-6 py-1 md:px-4 lg:px-6 duration-300 ease-linear font-helvetica text-lg  md:text-sm after:absolute lg:text-base xl:text-lg after:top-0 before:top-0 font-medium uppercase text-white  hover:text-highlight hover:after:bg-highlight hover:before:!bg-highlight md:text-menu relative after:bg-transparent after:w-2 after:h-full after:rounded-bl-[100%] after:right-0 before:absolute before:bg-transparent before:w-2 before:h-full before:rounded-br-[100%] before:left-0;
+    @apply px-6 py-1 md:px-4 lg:px-6 duration-300 ease-linear font-helvetica text-lg  md:text-sm after:absolute lg:text-base xl:text-lg after:top-[50%] before:top-[50%] after:translate-y-[-50%] before:translate-y-[-50%] font-medium uppercase text-white  hover:text-highlight hover:after:bg-highlight hover:before:!bg-highlight md:text-menu relative after:bg-transparent after:w-2 after:h-[60%] after:rounded-bl-[100%] after:right-0 before:absolute before:bg-transparent before:w-2 before:h-[60%] before:rounded-br-[100%] before:left-0;
   }
   .menu_active {
-    @apply !text-highlight relative after:absolute after:bg-highlight after:w-2 after:h-full after:rounded-bl-[100%] after:right-0 after:top-0 before:top-0 before:absolute before:bg-highlight before:w-2 before:h-full before:rounded-br-[100%] before:left-0;
+    @apply !text-highlight relative after:absolute after:bg-highlight after:w-2 after:h-[60%] after:rounded-bl-[100%] after:right-0 after:top-[50%] after:translate-y-[-50%]  before:top-[50%] before:translate-y-[-50%] before:absolute before:bg-highlight before:w-2 before:h-[60%] before:rounded-br-[100%] before:left-0;
   }
   .f_menu {
     @apply text-[#E0DBCE] font-helvetica font-normal text-xs sm:text-base pb-1 md:mb-4 inline-block duration-300 ease-linear hover:text-highlight relative after:w-0 after:h-[1px] after:absolute after:bottom-0 after:left-0 after:bg-highlight hover:after:w-full after:duration-300 after:ease-linear;

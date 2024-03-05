@@ -10,9 +10,11 @@ import BigProduct from "../component/bigProductShow";
 import Video from "../component/video";
 
 
+
 export default function Home() {
   return (
     <>
+
       <HeroSection />
       <Brand />
       <Service />

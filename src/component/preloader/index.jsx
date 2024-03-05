@@ -5,7 +5,7 @@ import intro from '../../assets/video/intro.mp4'
 
 export default function Preloader() {
   const [progress, setProgress] = useState(0);
-  let [videoPlay,setVideoPlay] = useState(false)
+  let [videoPlay,setVideoPlay] = useState(true)
   let [preloader,setPrelaoder] = useState(true)
 
  useEffect(() => {
@@ -24,10 +24,12 @@ export default function Preloader() {
       });
     }, 100);
     
-  },);
+  },3000);
+
   setTimeout(()=>{
     setPrelaoder(false)
   },10000)
+
 
 
   return () => clearInterval(interval);
@@ -55,14 +57,16 @@ export default function Preloader() {
     )
     :
     (
-      <div className="video absolute top-0 left-0 w-screen h-screen z-[9999999]">
-        <VideoPlayer
-            className="video"
-            src={intro}
-            autoPlay={true}
-            muted={true}
-        />
-    </div>
+     <div className="show-bg flex justify-center items-center w-screen h-screen">
+         <div className="shape-box w-screen flex -top-10 justify-around relative">
+           <div className="shape-one w-[320px] h-[580px]  bg-shape-l-pre rounded-br-[100%]"></div>
+           <div className="shape-thre">
+             <p className='font-helvetica font-medium text-[150px] text-[#CDE5E1] relative -bottom-40 circle-test'>Showcase <sup>x</sup></p>
+             <div className="circle w-72 h-72 bg-shape-circle rounded-[100%] skew-x-[60deg] m-auto rotate-[155deg] relative -bottom-32 scale-50"> </div>
+           </div>
+           <div className="shape-Three w-[320px] h-[580px] bg-shape-r-pre rounded-bl-[100%]"></div>
+         </div>
+     </div>
     )
      }
      </section>

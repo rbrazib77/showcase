@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FaPlayCircle } from "react-icons/fa";
-import stage from "../../assets/video/black.webm";
+// import stage from "../../assets/video/black.webm";
+import journey from "../../assets/images/journey/journey.png";
 const index = () => {
   const [isOpen, setOpen] = useState(false);
   const videoRef = useRef(null);
@@ -18,7 +19,7 @@ const index = () => {
   };
   return (
     <section className="bg-black">
-      <div className="">
+      <div className="cus-container">
         <h2 className="text-[#FFFFFF] font-helvetica font-medium pt-24 leading-[141%] pb-6 text-center text-6xl ">
           Our journey <span className="text-[#F7381E] italic">So Far</span>
         </h2>
@@ -27,24 +28,15 @@ const index = () => {
           Week. Here on Class Moda TV -
         </p>
 
-        <div className="cus-container relative z-10">
-          <video
-            src={stage}
-            ref={videoRef}
-            id="myVideo"
-            controls
-            muted
-            onClick={handleVideoClick}
-            className="w-full h-full"
-          ></video>
-          {!isOpen && (
-            <span
-              className="absolute top-1/2 left-1/2 cursor-pointer"
-              onClick={handleVideoClick}
-            >
-              <FaPlayCircle className="text-white text-6xl" />
-            </span>
-          )}
+        <div className="">
+          <a
+            target="_blank"
+            href="https://video.milanofinanza.it/video/micam-milano-97-l-inaugurazione-del-salone-internazionale-della-calzatura-al45dS3hBr2J?fbclid=IwAR0_zldHWGm4ngGOmey6sfCnh7jRsclEdo6BmzlUt8tP8Qj7qTCiwIQ7zYo"
+          >
+            <picture>
+              <img src={journey} alt="" />
+            </picture>
+          </a>
         </div>
       </div>
     </section>
