@@ -115,23 +115,26 @@ export default function Product() {
                             <img className="w-full" src={f3} />
                           </picture>
                           <h5 className="text-[#FFFFFF] mt-6 text-2xl font-helvetica font-medium">
-                            Immersive
+                            4K HDR
                           </h5>
                           <span className="font-artusi italic text-2xl text-[#FFFFFF]">
                             {" "}
-                            Display
+                            Augmented
                           </span>
+                          <h5 className="font-artusi italic text-2xl text-[#FFFFFF]">
+                            Reality
+                          </h5>
                         </div>
                         <div className="w-1/3 text-left pl-10">
                           <picture>
                             <img className="w-full" src={f2} />
                           </picture>
                           <h5 className="text-[#FFFFFF] mt-6 text-2xl font-helvetica font-medium">
-                            Immersive
+                            Virtual <span className="font-artusi italic text-2xl text-[#FFFFFF]">Try</span>
                           </h5>
                           <span className="font-artusi italic text-2xl text-[#FFFFFF]">
                             {" "}
-                            Display
+                            On
                           </span>
                         </div>
                       </div>
