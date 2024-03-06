@@ -114,7 +114,7 @@ export default function Product() {
                           <picture>
                             <img className="w-full" src={f3} />
                           </picture>
-                          <h5 className="text-[#FFFFFF] mt-6 text-2xl font-helvetica font-medium">
+                          <h5 className="text-[#FFFFFF] mt-6 text-2xl font-helvetica ">
                             4K HDR
                           </h5>
                           <span className="font-artusi italic text-2xl text-[#FFFFFF]">
