@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
-import { FaPlayCircle } from "react-icons/fa";
-// import stage from "../../assets/video/black.webm";
+import { FaPlay } from "react-icons/fa";
 import journey from "../../assets/images/journey/journey.png";
 const index = () => {
   const [isOpen, setOpen] = useState(false);
@@ -37,6 +36,7 @@ const index = () => {
               <img src={journey} alt="" />
             </picture>
           </a>
+          {/* <FaPlay className="text-white" /> */}
         </div>
       </div>
     </section>

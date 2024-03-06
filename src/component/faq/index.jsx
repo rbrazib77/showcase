@@ -51,9 +51,11 @@ export default function Faqs() {
             <div className="flex items-center">
               <div className="w-[783px] mr-20 ">
                 <div className="">
-                  <h2 className="text-white text-6xl  leading-[120%] pb-14 tracking-[1%]">
+                  <h2 className="text-white font-helvetica font-medium text-6xl  leading-[120%] pb-14 tracking-[1%]">
                     Frequently Ask{" "}
-                    <span className="text-[#F7381E]">Questions</span>
+                    <span className="text-[#F7381E] font-artusiG italic">
+                      Questions
+                    </span>
                   </h2>
                 </div>
                 <motion.div
@@ -73,17 +75,16 @@ export default function Faqs() {
                         onClick={() => handleAccordion(i)}
                         className="cursor-pointer text-[#FFFFFF] text-2xl font-medium font-helvetica flex justify-between "
                       >
+                        <span className="flex gap-3">
+                          {faqs === i && (
+                            <span className="w-5 h-9 bg-red-500 block rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  to-highlight  to-[112%] from-[-26%] from-[#000000]"></span>
+                          )}
+                          {item.title}
+                          {faqs === i && (
+                            <span className="w-5 h-9 bg-red-500 block rounded-bl-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  to-highlight  to-[112%] from-[-26%] from-[#000000]"></span>
+                          )}
+                        </span>
 
-                       <span className="flex gap-3">
-                        {faqs===i && 
-                       <span className="w-5 h-9 bg-red-500 block rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  to-highlight  to-[112%] from-[-26%] from-[#000000]"></span>
-                        }
-                       {item.title}
-                       {faqs===i && 
-                       <span className="w-5 h-9 bg-red-500 block rounded-bl-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  to-highlight  to-[112%] from-[-26%] from-[#000000]"></span>
-                      }
-                       </span>
-                       
                         <span className="cursor-pointer">
                           {faqs === i ? (
                             <IoIosArrowUp

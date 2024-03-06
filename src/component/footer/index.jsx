@@ -1,5 +1,6 @@
 import React from 'react'
 import flogo from '../../assets/images/flogo.png'
+import { NavLink } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -32,9 +33,13 @@ export default function Footer() {
                 <div className="foter_menu">
                         <h6 className="font-medium font-helvetica text-[22px] md:mb-6 text-highlight inline-block border-b border-highlight">Solution</h6>
                         <ul>
-                            <li><a className='f_menu' href="#">Features</a></li>
-                            <li><a className='f_menu' href="#">How it works</a></li>
-                            <li><a className='f_menu' href="#">Pricing</a></li>
+                            <li>
+                                <a className='f_menu' href="/solution">Features</a>
+                            </li>
+                            <li>
+                                <a className='f_menu' href="/howitworks">How it works</a>
+                            </li>
+                            <li><a className='f_menu' href="/pricing">Pricing</a></li>
                         </ul>
                     </div>
                 </div>

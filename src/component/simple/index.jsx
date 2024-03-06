@@ -116,7 +116,7 @@ const index = () => {
               </h1>
               <span>
                 <a href="#">
-                  <IoIosArrowRoundUp className="inline-block rotate-45 text-4xl text-[#F7381E] p-2 border h-[70px] w-[70px] border-[#F7381E] rounded-full" />
+                  <IoIosArrowRoundUp className="inline-block rotate-45 text-4xl text-[#F7381E] group-hover:rotate-[220deg] p-2 border h-[70px] w-[70px] border-[#F7381E] rounded-full" />
                 </a>
               </span>
             </div>
@@ -160,7 +160,7 @@ const index = () => {
             </h1>
             <span>
               <a href="#">
-                <IoIosArrowRoundUp className="inline-block rotate-45 text-4xl text-[#F7381E] p-2 border h-[70px] w-[70px] border-[#F7381E] rounded-full" />
+                <IoIosArrowRoundUp className="inline-block rotate-45 text-4xl text-[#F7381E] group-hover:rotate-[220deg] p-2 border h-[70px] w-[70px] border-[#F7381E] rounded-full" />
               </a>
             </span>
           </div>
