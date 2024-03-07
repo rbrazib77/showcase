@@ -331,5 +331,254 @@
         -moz-transform: translateY(0px);
         -ms-transform: translateY(0px);
         -o-transform: translateY(0px);
-    }
+  }
 }
+
+  .preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;/* You can change the background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    width: 559px; /* You can adjust the width of the progress bar */
+    height: 10px;
+    background-color: transparent; /* You can change the background color of the progress bar */
+    border-radius: 10px;
+    border: 2px solid #F7381E;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #F7381E; /* You can change the color of the progress indicator */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* You can change the color of the percentage text */
+  }
+  
+  .loading-img{
+    position: relative;
+  }
+  .loading-img::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    background: #000000;
+    height: 100%;
+    transform-origin: left;
+    content: '';
+    animation: imgFill 3s 1 linear 0s;
+    -webkit-animation: imgFill 3s 1 linear 0s;
+  }
+  
+  @keyframes imgFill {
+    0%{
+      width: 100%;
+    }
+    100%{
+      width: 0%;
+    }
+  }
+  
+  
+  .marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: marquee 40s linear infinite;
+    animation-delay: 1s;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-animation: marquee 40s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+  }
+    to {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+  }
+  }
+  #myVideo::-webkit-media-controls {
+    display: none !important;
+  }
+  
+  #myVideo::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+  
+  #myVideo::-webkit-media-controls-panel {
+    display: none !important;
+  }
+  .show-bg{
+    background: #1A201E;
+    animation: bg 2s linear forwards;
+    -webkit-animation: bg 2s linear forwards;
+  }
+  
+  .bg-shape-l-pre{
+    background: conic-gradient(from 0deg at -10% 92.81%, #CDE5E1 0deg, #FFBF6F 30deg, #FF3877 69deg, #FF7864 144deg, #B1D4C9 282deg);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    position: absolute;
+    z-index: 99999999;
+    left: 605px;
+    animation: shapeScaleLeft 2s linear forwards;
+    -webkit-animation: shapeScaleLeft 2s linear forwards;
+  }
+  .circle-test{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    animation: textScale 2s linear 1s forwards;
+    -webkit-animation: textScale 2s linear 1s forwards;
+    opacity: 0;
+  }
+  .bg-shape-r-pre{
+    background: conic-gradient(from 0deg at -10% 92.81%,  #FFBF6F 30deg, #FF3877 69deg, #FF7864 144deg, #B1D4C9 282deg,#CDE5E1 0deg);
+    position: absolute;
+    z-index: 99999;
+    right: 605px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    animation: shapeScale 2s linear forwards;
+    -webkit-animation: shapeScale 2s linear forwards;
+  }
+  .bg-shape-circle{
+     background:radial-gradient(61.61% 60.44% at 36.29% 68.56%, #1A201E 0%, rgba(26, 32, 30, 0.00) 100%), radial-gradient(62.61% 76.44% at 30.29% 71.56%, #1A201E 0%, #CDE5E1 100%);
+     transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+     -webkit-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+     -moz-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+     -ms-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+     -o-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+     bottom: 0;
+     animation: circleScale 2s linear forwards;
+     -webkit-animation: circleScale 2s linear forwards;
+  }
+  @keyframes circleScale {
+    0%{
+      transform: rotateX(92deg) scaleY(8) perspective(500px) scale(.6);
+      -webkit-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(.6);
+      -moz-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(.6);
+      -ms-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(.6);
+      -o-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(.6);
+      background:  #1A201E;
+      bottom: 10px;
+    }
+    100%{
+      transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+      -webkit-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+      -moz-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+      -ms-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+      -o-transform: rotateX(92deg) scaleY(8) perspective(500px) scale(1);
+      bottom: -220px;
+  }
+  }
+  @keyframes shapeScale {
+    0%{
+      right: 760px;
+      transform: scale(.21);
+      -webkit-transform: scale(.21);
+      -moz-transform: scale(.21);
+      -ms-transform: scale(.21);
+      -o-transform: scale(.21);
+      background:  #1A201E;
+    }
+    100%{
+      right: 10%;
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    background: conic-gradient(from 0deg at -10% 92.81%,  #FFBF6F 30deg, #FF3877 69deg, #FF7864 144deg, #B1D4C9 282deg,#CDE5E1 0deg);
+    box-shadow: 0 0 50px 0 #000000;
+  
+  }
+  }
+  @keyframes shapeScaleLeft {
+    0%{
+      left: 760px;
+      transform: scale(.21);
+      -webkit-transform: scale(.21);
+      -moz-transform: scale(.21);
+      -ms-transform: scale(.21);
+      -o-transform: scale(.21);
+      background:  #1A201E;
+    }
+    100%{
+      left:  10%;
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    background: conic-gradient(from 0deg at -10% 92.81%,  #FFBF6F 30deg, #FF3877 69deg, #FF7864 144deg, #B1D4C9 282deg,#CDE5E1 0deg);
+    box-shadow: 0 0 50px 0 #000000;
+  
+  }
+  }
+  @keyframes bg {
+    0%{
+       background: #ffffff;
+    }
+    100%{
+      background: #1A201E;
+  }
+  }
+  @keyframes textScale {
+    0%{
+       transform: scale(0);
+       -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+       -ms-transform: scale(0);
+       -o-transform: scale(0);
+       opacity: 0;
+  }
+    100%{
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      opacity: 1;
+  }
+
+}
+

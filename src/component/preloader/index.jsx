@@ -6,7 +6,7 @@ import intro from '../../assets/video/intro.mp4'
 export default function Preloader() {
   const [progress, setProgress] = useState(0);
   let [videoPlay,setVideoPlay] = useState(true)
-  let [preloader,setPrelaoder] = useState(true)
+  // let [preloader,setPrelaoder] = useState(true)
 
  useEffect(() => {
   let interval;
@@ -22,13 +22,13 @@ export default function Preloader() {
           return prevProgress + 1;
         }
       });
-    }, 100);
+    }, 70);
     
-  },3000);
+  },2000);
 
-  setTimeout(()=>{
-    setPrelaoder(false)
-  },10000)
+  // setTimeout(()=>{
+  //   setPrelaoder(false)
+  // },10000)
 
 
 
@@ -36,7 +36,7 @@ export default function Preloader() {
 }, []);
   return (
     <>
-    {preloader &&
+    {/* {preloader && */}
     <section className='preloader fixed z-[9999998] top-0 left-0 w-screen h-screen bg-black '>
     {!videoPlay ?
     (
@@ -70,7 +70,7 @@ export default function Preloader() {
     )
      }
      </section>
-     }
+     
     </>
   )
 }

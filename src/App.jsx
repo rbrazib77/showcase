@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState ,useEffect} from 'react'
 import './App.css'
 import {
   createBrowserRouter,
@@ -12,6 +12,7 @@ import About from './pages/About';
 import Pricing from './pages/Pricing';
 import HowItWorks from './pages/HowItworks';
 import RootLayout from "./component/rootlayout";
+import Preloader from "./component/preloader";
 
 
 const router = createBrowserRouter(
@@ -22,20 +23,26 @@ const router = createBrowserRouter(
       <Route path="/pricing" element={<Pricing />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/howitworks" element={<HowItWorks />}></Route>
-      {/* <Route path="/services" element={<Services />}></Route>
-      <Route path="/project" element={<Project />}></Route>
-      <Route path="/testimonial" element={<Testimonial />}></Route>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/registration" element={<Registration />}></Route>
-      <Route path="/protfolio" element={<Login />}></Route> */}
-      
     </Route>
   )
 );
 
 
 function App() {
-  return <RouterProvider router={router} />;
+  const [isload, setLoad ] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoad(false);
+    },6000);
+  });
+
+  return(
+    <div>
+      {
+        isload ?<Preloader/>:<RouterProvider router={router} />
+      }
+    </div>
+  );
 }
 
 export default App

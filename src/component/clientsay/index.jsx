@@ -161,7 +161,7 @@ export default function Slider() {
         </div>
         {/* arrows */}
       </div>
-      <div className="flex absolute bottom-[210px]  right-[160px] z-[9999]">
+      <div className="flex absolute bottom-[210px] right-[360px] lg:right-[120px] z-[9999]">
         <IoIosArrowRoundForward
           onClick={() => showSlider("prev")}
           className="text-red-500 border border-[#f45252] h-20 w-20 rounded-full text-[25px] mr-5 "
