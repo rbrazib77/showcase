@@ -13,6 +13,21 @@ export default function Brand2() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+     
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
   return (
     <>

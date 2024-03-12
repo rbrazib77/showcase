@@ -24,13 +24,13 @@ export default function Brand() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
     ],
@@ -39,7 +39,7 @@ export default function Brand() {
     <>
       <section className="bg-black">
         <div className="bg-black w-[102%] -left-5 items-center rounded-t-[20%] relative md:top-[-120px] lg:top-[-200px] xl:top-[-260px] 2xl:top-[-120px] ">
-          <div className="brand border-t-[2px] border-b-[2px] border-[#303030] justify-around items-center rounded-t-[20%] rounded-b-[20%] overflow-hidden">
+          <div className="brand border-t-[2px] border-b-[2px] border-[#303030] justify-around items-center md:rounded-t-[20%] lg:rounded-t-[20%] xl:rounded-t-[20%] 2xl:rounded-t-[20%] md:rounded-b-[20%] lg:rounded-b-[20%] xl:rounded-b-[20%] 2xl:rounded-b-[20%]  overflow-hidden">
             <div className="brand-slider">
               <Slider {...settings}>
                 <div className="img flex justify-center items-center relative after:absolute after:right-0 after:w-[2px] after:h-[320px] after:contents-[''] after:-top-10 after:bg-[#303030]  p-10 md:p-28">

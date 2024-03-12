@@ -58,7 +58,7 @@ export default function Slider() {
 
   return (
     <section className="bg-black  pb-[120px] relative">
-      <h2 className="font-artusiG  leading-[120%] pb-7 text-center text-[60px] text-[#FFFFFF]">
+      <h2 className="font-artusiG  leading-[120%] pb-7 text-center text-[40px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] text-[#FFFFFF]">
         What Our{" "}
         <span className="text-[#F7381E] font-bold italic">Clients Say</span>
       </h2>

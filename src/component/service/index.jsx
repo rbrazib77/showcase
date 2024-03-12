@@ -3,13 +3,13 @@ import React from 'react'
 export default function Services() {
   return (
     <>
-    <section className='bg-black pb-10 md:pb-20'>
-        <div className="xl:px-[140px] gl:px-[140px] sm:px-0">
-            <div className="title pb-28">
+    <section className='bg-black md:pb-20 lg:pb-10 xl:pb-10 2xl:pb-10'>
+        <div className="xl:px-[140px] gl:px-[140px] px-4 pt-6 lg:pt-0 xl:pt-0 2xl:pt-0">
+            <div className="title pb-10 md:pb-28 lg:pb-28 xl:pb-28 2xl:pb-28">
                 <div className="heading text-center">
                     <h3 className='font-helvetica capitalize font-medium text-2xl sm:text-6xl text-white'><span className='text-highlight italic'> 3.3%</span> average <span className='font-artusiG italic  font-thin'>e-commerce </span> <br /> <span className='font-artusi italic font-thin'>conversion</span> rate increase</h3>
                 </div>
-                <p className='font-helvetica font-medium text-[#c0c0c0c5] text-sm px-6 sm:text-lg max-w-[776px] m-auto text-center pt-4'>showcase x drives an increase in e-commerce product purchases like never before. This is the next generation of online commerce.</p>
+                <p className='font-helvetica font-medium text-[#c0c0c0c5] text-sm px-6 sm:text-lg max-w-[382px] md:max-w-[776px] lg:max-w-[776px] xl:max-w-[776px] 2xl:max-w-[776px] m-auto text-center pt-4'>showcase x drives an increase in e-commerce product purchases like never before. This is the next generation of online commerce.</p>
             </div>
              <div className="content sm:flex justify-around flex-wrap">
                 <div className="md:w-1/2 lg:w-1/3  sm:p-6">
