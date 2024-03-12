@@ -4,8 +4,8 @@ import { GiCheckMark } from "react-icons/gi";
 const index = () => {
   return (
     <>
-      <div className="flex justify-between">
-        <div className="w-[502px] bg-[#1D2022] relative duration-300 ease-linear pt-10 pb-8 px-7 rounded-[40px] overflow-hidden group">
+      <div className="md:flex lg:flex xl:flex 2xl:flex justify-between">
+        <div className="md:w-[502px] lg:w-[502px] xl:w-[502px] 2xl:w-[502px] bg-[#1D2022] relative duration-300 ease-linear pt-10 pb-8 px-7 rounded-[40px] overflow-hidden group">
           <span className="blur-shap w-0 h-0 duration-100 ease-linear group-hover:w-80 group-hover:h-80  block absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]  bg-[#FE343450] rounded-[100%]"></span>
           <h5 className="text-[#D9D9D9] text-4xl font-helvetica font-bold">
             Starter
@@ -56,7 +56,7 @@ const index = () => {
             Get Started
           </button>
         </div>
-        <div className="w-[502px] mx-7 bg-[#1D2022] relative duration-300 ease-linear pt-10 pb-8 px-7 rounded-[40px] overflow-hidden group">
+        <div className="md:w-[502px] lg:w-[502px] xl:w-[502px] 2xl:w-[502px] md:mx-7 my-7 sm:my-0  lg:mx-7 xl:mx-7 2xl:mx-7 bg-[#1D2022] relative duration-300 ease-linear pt-10 pb-8 px-7 rounded-[40px] overflow-hidden group">
           <span className="blur-shap w-0 h-0 duration-100 ease-linear group-hover:w-80 group-hover:h-80  block absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]  bg-[#FE343450] rounded-[100%]"></span>
           <h5 className="text-[#D9D9D9] text-4xl font-helvetica font-bold">
             Starter
@@ -107,7 +107,7 @@ const index = () => {
             Get Started
           </button>
         </div>
-        <div className="w-[502px] bg-[#1D2022] relative duration-300 ease-linear pt-10 pb-8 px-7 rounded-[40px] overflow-hidden group">
+        <div className="md:w-[502px] lg:w-[502px] xl:w-[502px] 2xl:w-[502px] bg-[#1D2022] relative duration-300 ease-linear pt-10 pb-8 px-7 rounded-[40px] overflow-hidden group">
           <span className="blur-shap w-0 h-0 duration-100 ease-linear group-hover:w-80 group-hover:h-80  block absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]  bg-[#FE343450] rounded-[100%]"></span>
           <h5 className="text-[#D9D9D9] text-4xl font-helvetica font-bold">
             Starter

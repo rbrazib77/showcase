@@ -45,11 +45,11 @@ export default function Faqs() {
   };
   return (
     <>
-      <div className="bg-black pb-[334px]">
-        <div className=" pl-24">
+      <div className="bg-black pb-[80px] md:pb-[334px] lg:pb-[334px] xl:pb-[334px] 2xl:pb-[334px]">
+        <div className="md:pl-24 lg:pl-24 xl:pl-24 2xl:pl-24">
           <div className="">
-            <div className="flex items-center">
-              <div className="w-[783px] mr-20 ">
+            <div className="md:flex lg:flex xl:flex 2xl:flex items-center">
+              <div className="md:w-[783px] lg:w-[783px] xl:w-[783px] 2xl:w-[783px] md:mr-20 lg:mr-20 xl:mr-20 2xl:mr-20">
                 <div className="">
                   <h2 className="text-white font-helvetica font-medium text-6xl  leading-[120%] pb-14 tracking-[1%]">
                     Frequently Ask{" "}
