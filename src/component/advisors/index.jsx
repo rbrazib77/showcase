@@ -8,17 +8,17 @@ import advisors5 from "../../assets/images/advisors/advisors5.png";
 import advisors6 from "../../assets/images/advisors/advisors6.png";
 const index = () => {
   return (
-    <section className="bg-black py-32 ">
+    <section className="bg-black py-10 md:py-32 lg:py-32 xl:py-32 2xl:py-32 ">
       <div className="cus-container">
-        <h2 className="text-[#FFFFFF] font-helvetica font-medium leading-[120%] pb-6 text-center text-6xl ">
+        <h2 className="text-[#FFFFFF] font-helvetica font-medium leading-[120%] pb-6 text-center text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl ">
           Advisors
         </h2>
-        <p className="text-[#C0C0C0] text-center px-[130px] font-medium font-helvetica pb-40 text-2xl w-[1187px] leading-[141%]  relative left-[50%] translate-x-[-50%]">
+        <p className="text-[#C0C0C0] text-center text-centerpx-[10px] md:px-[130px] lg:px-[130px] xl:px-[130px] 2xl:px-[130px] font-medium font-helvetica pb-10 md:pb-40 lg:pb-40 xl:pb-40 2xl:pb-40 text-2xl w-[400px]  md:w-[1187px] lg:w-[1187px] xl:w-[1187px] 2xl:w-[1187px]  leading-[141%]  relative left-[50%] translate-x-[-50%]">
           Showcase X is supported by a leading board of advisors from the
           fashion industry.
         </p>
-        <div className="flex mb-24 ">
-          <div className="w-[535px] relative ">
+        <div className="md:flex lg:flex xl:flex 2xl:flex mb-6 md:mb-24 lg:mb-24 xl:mb-24 2xl:mb-24 ">
+          <div className=" md:w-[535px] lg:w-[535px] xl:w-[535px] 2xl:w-[535px] relative ">
             <picture>
               <img src={advisors1} className="w-full" alt="" />
             </picture>
@@ -31,7 +31,7 @@ const index = () => {
               </a>
             </div>
           </div>
-          <div className="w-[535px] mx-9 relative ">
+          <div className="md:w-[535px] lg:w-[535px] xl:w-[535px] 2xl:w-[535px] md:mx-9 lg:mx-9 xl:mx-9 2xl:mx-9 my-6 sm:my-0 relative">
             <picture>
               <img src={advisors2} className="w-full" alt="" />
             </picture>
@@ -44,7 +44,7 @@ const index = () => {
               </a>
             </div>
           </div>
-          <div className="w-[535px] relative">
+          <div className="md:w-[535px] lg:w-[535px] xl:w-[535px] 2xl:w-[535px relative">
             <picture>
               <img src={advisors3} className="w-full" alt="" />
             </picture>
@@ -58,8 +58,8 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div className="flex">
-          <div className="w-[535px] relative ">
+        <div className="md:flex lg:flex xl:flex 2xl:flex">
+          <div className="md:w-[535px] lg:w-[535px] xl:w-[535px] 2xl:w-[535px relative ">
             <picture>
               <img src={advisors4} className="w-full" alt="" />
             </picture>
@@ -72,7 +72,7 @@ const index = () => {
               </a>
             </div>
           </div>
-          <div className="w-[535px] mx-9 relative ">
+          <div className="md:w-[535px] lg:w-[535px] xl:w-[535px] 2xl:w-[535px] md:mx-9 lg:mx-9 xl:mx-9 2xl:mx-9 my-6 sm:my-0 relative ">
             <picture>
               <img src={advisors5} className="w-full" alt="" />
             </picture>
@@ -85,13 +85,13 @@ const index = () => {
               </a>
             </div>
           </div>
-          <div className="w-[535px] relative">
+          <div className="md:w-[535px] lg:w-[535px] xl:w-[535px] 2xl:w-[535px] relative">
             <picture>
               <img src={advisors6} className="w-full" alt="" />
             </picture>
             <div className="bg-[#FFFFFF25] flex justify-between px-6 py-8 w-full absolute bottom-0 left-0">
               <p className="font-helvetica text-[#FFFFFF] font-medium text-3xl">
-              Saverrio
+                Saverrio
               </p>
               <a href="#">
                 <IoIosArrowRoundUp className="inline-block rotate-45 text-5xl text-white duration-300 ease-linear hover:text-highlight" />

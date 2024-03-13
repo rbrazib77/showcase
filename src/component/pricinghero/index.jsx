@@ -11,6 +11,7 @@ import VideoPlayer from "react-background-video-player";
 import video1 from "../../assets/video/hero/1.webm";
 import video2 from "../../assets/video/hero/2.webm";
 import video3 from "../../assets/video/hero/3.webm";
+import { NavLink } from "react-router-dom";
 
 export default function HeroSection() {
   var settings = {
@@ -50,13 +51,19 @@ export default function HeroSection() {
         <div className="absolute top-[-10px] md:top-[250px] lg:top-[250px] xl:top-[250px] 2xl:top-[250px] right-0">
             <div className="cus-container">
               <div>
+              <NavLink target="_blank" to="https://twitter.com/ShowcaseX_/">
                 <FaTwitter className="h-10 w-10 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:h-16 2xl:w-16 p-2 md:p-4 lg:p-4 xl:p-4 2xl:p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+              </NavLink>
               </div>
               <div className="my-3 md:my-7 lg:my-7 xl:my-7 2xl:my-7">
+              <NavLink target="_blank" to="https://www.instagram.com/showcasex_/">
                 <FaInstagram className="h-10 w-10 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:h-16 2xl:w-16 p-2 md:p-4 lg:p-4 xl:p-4 2xl:p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+                </NavLink>
               </div>
               <div>
+              <NavLink target="_blank" to="https://www.linkedin.com/company/showcasex/?viewAsMember=true">
                 <FaLinkedin className="h-10 w-10 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:h-16 2xl:w-16 p-2 md:p-4 lg:p-4 xl:p-4 2xl:p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+                </NavLink>
               </div>
             </div>
           </div>

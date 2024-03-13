@@ -57,7 +57,8 @@ export default function Preloader() {
     )
     :
     (
-     <div className="show-bg flex justify-center items-center w-screen h-screen">
+     <div className='hidden lg:block md:block xl:block 2xl:block'>
+      <div className="show-bg flex justify-center items-center w-screen h-screen">
          <div className="shape-box w-screen flex -top-10 justify-around relative">
            <div className="shape-one w-[320px] h-[580px]  bg-shape-l-pre rounded-br-[100%]"></div>
            <div className="shape-thre">
@@ -66,6 +67,7 @@ export default function Preloader() {
            </div>
            <div className="shape-Three w-[320px] h-[580px] bg-shape-r-pre rounded-bl-[100%]"></div>
          </div>
+     </div>
      </div>
     )
      }

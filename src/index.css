@@ -134,6 +134,12 @@
   border: 2px solid #f7381e;
 }
 
+@media (min-width: 320px) and (max-width: 575px) {
+  .progress-bar {
+    width: 350px !important;
+  }
+}
+
 .progress {
   height: 100%;
   background-color: #f7381e; /* You can change the color of the progress indicator */
@@ -350,6 +356,7 @@
     font-size: 20px;
     margin-bottom: 20px;
   }
+
   
   .progress-bar {
     width: 559px; /* You can adjust the width of the progress bar */

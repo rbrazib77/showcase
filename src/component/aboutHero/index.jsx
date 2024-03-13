@@ -11,6 +11,7 @@ import VideoPlayer from "react-background-video-player";
 import video1 from "../../assets/video/hero/1.webm";
 import video2 from "../../assets/video/hero/2.webm";
 import video3 from "../../assets/video/hero/3.webm";
+import { NavLink } from "react-router-dom";
 
 export default function HeroSection() {
   var settings = {
@@ -30,50 +31,47 @@ export default function HeroSection() {
     <>
       <section className="heroSection bg-black relative overflow-hidden">
         <Slider {...settings}>
-          <div className="w-[100dvh] h-[768px] lg:h-[868px] xl:h-[1028px] relative sm:top-[-100px] 2xl:top-0">
-            <VideoPlayer
-              className="video"
-              src={video1}
-              autoPlay={true}
-              muted={true}
-            />
+          <div className="w-[100dvh] h-[640px] sm:h-[768px] lg:h-[868px] xl:h-[1028px] relative sm:top-[-100px] 2xl:top-0">
+            <video controls muted loop autoPlay width="100%" id="#myVideo">
+              <source src={video1} type="video/mp4" />
+            </video>
           </div>
-          <div className="w-[100dvh] h-[768px] lg:h-[868px] xl:h-[1028px] relative sm:top-[-100px] 2xl:top-0">
-            <VideoPlayer
-              className="video"
-              src={video2}
-              autoPlay={true}
-              muted={true}
-            />
+          <div className="w-[100dvh] h-[640px] sm:h-[768px] lg:h-[868px] xl:h-[1028px] relative sm:top-[-100px] 2xl:top-0">
+            <video controls muted loop autoPlay width="100%" id="#myVideo">
+              <source src={video2} type="video/mp4" />
+            </video>
           </div>
-          <div className="w-[100dvh] h-[768px] lg:h-[868px] xl:h-[1028px] relative sm:top-[-100px] 2xl:top-0">
-            <VideoPlayer
-              className="video"
-              src={video3}
-              autoPlay={true}
-              muted={true}
-            />
+          <div className="w-[100dvh] h-[640px] sm:h-[768px] lg:h-[868px] xl:h-[1028px] relative sm:top-[-100px] 2xl:top-0">
+            <video controls muted loop autoPlay width="100%" id="#myVideo">
+              <source src={video3} type="video/mp4" />
+            </video>
           </div>
         </Slider>
         <div className="content absolute top-24 md:-top-10 w-full">
-          <div className="absolute top-[250px] right-0">
+        <div className="absolute top-[-10px] md:top-[250px] lg:top-[250px] xl:top-[250px] 2xl:top-[250px] right-0">
             <div className="cus-container">
               <div>
-                <FaTwitter className="w-16 h-16 p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+              <NavLink target="_blank" to="https://twitter.com/ShowcaseX_/">
+                <FaTwitter className="h-10 w-10 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:h-16 2xl:w-16 p-2 md:p-4 lg:p-4 xl:p-4 2xl:p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+              </NavLink>
               </div>
-              <div className="my-7">
-                <FaInstagram className="w-16 h-16 p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+              <div className="my-3 md:my-7 lg:my-7 xl:my-7 2xl:my-7">
+              <NavLink target="_blank" to="https://www.instagram.com/showcasex_/">
+                <FaInstagram className="h-10 w-10 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:h-16 2xl:w-16 p-2 md:p-4 lg:p-4 xl:p-4 2xl:p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+                </NavLink>
               </div>
               <div>
-                <FaLinkedin className="w-16 h-16 p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+              <NavLink target="_blank" to="https://www.linkedin.com/company/showcasex/?viewAsMember=true">
+                <FaLinkedin className="h-10 w-10 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:h-16 2xl:w-16 p-2 md:p-4 lg:p-4 xl:p-4 2xl:p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
+                </NavLink>
               </div>
             </div>
           </div>
           <div className="cus-container">
             <div className="md:flex justify-between">
-              <div className=" md:w-3/5 lg:w-2/5">
-                <div className="box inline-block w-[600px] bg-gradient-to-t to-[#6767675e] via-[#74747433] from-[#ffffff22] xl:py-9 xl:px-[100] rounded-2xl sm:p-8 backdrop-blur-sm border border-[#676767] mt-32 sm:mt-[50%] md:mt-[80%] md:mr-1 lg:mr-0 lg:mt-[85%]">
-                  <h4 className="font-helvetica font-medium text-5xl text-white leading-[56px]">
+              <div className=" md:w-3/5 lg:w-2/5 mt-7 sm:mt-0">
+                <div className="box p-5 sm:p-0 inline-block w-[360px] md:w-[600px] lg:w-[600px] xl:w-[600px] 2xl:w-[600px] bg-gradient-to-t to-[#6767675e] via-[#74747433] from-[#ffffff22] xl:py-9 xl:px-[100] rounded-2xl sm:p-8 backdrop-blur-sm border border-[#676767] mt-32 sm:mt-[50%] md:mt-[80%] md:mr-1 lg:mr-0 lg:mt-[85%]">
+                  <h4 className="font-helvetica font-medium text-4xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-white leading-[56px]">
                     As{" "}
                     <span className="font-artusi italic font-thin">
                       Featured

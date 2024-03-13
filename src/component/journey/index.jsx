@@ -19,10 +19,10 @@ const index = () => {
   return (
     <section className="bg-black">
       <div className="cus-container">
-        <h2 className="text-[#FFFFFF] font-helvetica font-medium pt-24 leading-[141%] pb-6 text-center text-6xl ">
+        <h2 className="text-[#FFFFFF] font-helvetica font-medium pt-10 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 leading-[141%] pb-6 text-center text-[44px] md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl ">
           Our journey <span className="text-[#F7381E] italic">So Far</span>
         </h2>
-        <p className="text-[#C0C0C0] text-center px-[130px] font-medium font-helvetica pb-32 pt-6 text-2xl w-[1075px]  leading-[141%]  relative left-[50%] translate-x-[-50%]">
+        <p className="text-[#C0C0C0] text-center px-[10px] md:px-[130px] lg:px-[130px] xl:px-[130px] 2xl:px-[130px] font-medium font-helvetica pb-10 md:pb-32 lg:pb-32 xl:pb-32 2xl:pb-32 pt-6 text-2xl w-[400px]  md:w-[1075px] lg:w-[1075px] xl:w-[1075px] 2xl:w-[1075px]  leading-[141%]  relative left-[50%] translate-x-[-50%]">
           Recently seen at MIDO, MICAM, London Fashion Week and Milan Fashion
           Week. Here on Class Moda TV -
         </p>
