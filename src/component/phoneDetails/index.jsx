@@ -4,11 +4,11 @@ import circle from "../../assets/images/mobile/circle.png";
 import small_logo from "../../assets/images/mobile/c_icon.png";
 const index = () => {
   return (
-    <section className="relative">
+    <section className="relative bg-black pt-44 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0">
       <picture>
         <img src={phonedetail} alt="" />
       </picture>
-      <div className="absolute -top-5 md:top-0 lg:top-0 xl:top-0 2xl:top-0 -left-8 md:left-0 lg:left-0 xl:left-0 2xl:left-0">
+      <div className="absolute top-8 md:top-0 lg:top-0 xl:top-0 2xl:top-0 left-0 md:left-0 lg:left-0 xl:left-0 2xl:left-0">
         <div className="circle w-24 md:w-40 lg:w-52">
           <picture className="">
             <img
