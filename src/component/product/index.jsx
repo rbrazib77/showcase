@@ -20,7 +20,7 @@ export default function Product() {
             <div className="lg:w-1/2">
               <div className="txt-box">
                 <h4 className="font-helvetica max-w-[250px] lg:max-w-[741px] md:max-w-[741px] xl:max-w-[741px] 2xl:max-w-[741px] lg:pr-5 font-medium leading-[124%]  text-[28px]  md:text-[62px] lg:text-[62px] xl:text-[80px] 2xl:text-[80px] text-white md:leading-[80px] lg:leading-[80px] xl:leading-[80px] 2xl:leading-[80px]">
-                  The
+                  The And one
                   <span className="font-artusiG font-normal italic">
                     {" "}
                     problem{" "}
