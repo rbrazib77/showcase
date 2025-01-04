@@ -57,134 +57,123 @@ export default function Slider() {
   console.log(sliderIndex);
 
   return (
-    <section className="bg-black  pb-[120px] relative">
-      <h2 className="font-artusiG  leading-[120%] pb-7 text-center text-[40px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] text-[#FFFFFF]">
+    <section className="bg-black pb-12  md:pb-[120px] lg:pb-[120px] xl:pb-[120px] 2xl:pb-[120px] relative">
+      <h2 className="font-artusiG  leading-[120%] pb-[15px] md:pb-7 xl:pb-7 lg:pb-7 2xl:pb-7 text-center text-[28px] md:text-[60px] lg:text-[60px] xl:text-[60px] 2xl:text-[60px] text-[#FFFFFF]">
         What Our{" "}
         <span className="text-[#F7381E] font-bold italic">Clients Say</span>
       </h2>
-      <p className=" font-artusiC max-w-[666px] m-auto text-center text-lg leading-[30px] px-8 text-[#8E8E8E] pb-[70px]">
+      <p className=" font-artusiC max-w-[290px] md:max-w-[666px] lg:max-w-[666px] xl:max-w-[666px] 2xl:max-w-[666px]   m-auto text-center text-xs md:text-lg xl:text-lg 2xl:text-lg lg:text-lg md:leading-[30px] lg:leading-[30px] xl:leading-[30px] 2xl:leading-[30px] px-8 text-[#8E8E8E] md:pb-[70px] lg:pb-[70px] xl:pb-[70px] 2xl:pb-[70px] pb-[25px]">
         Don't just take our word for it, see what some of our first clients have
         said, partnering with showcase X. on
       </p>
 
       <div
-        className="relative slideBox z-[9999] h-[350px] md:h-[553px] lg:h-[553px] xl:h-[553px] 2xl:h-[553px] m-auto w-[350px] md:w-[1475px] lg:w-[1475px] xl:w-[1475px] 2xl:w-[1475px]"
+        className="relative pb-10 slideBox z-[9999] h-[230px] md:h-[553px] lg:h-[553px] xl:h-[553px] 2xl:h-[553px] m-auto w-[350px] md:w-[1475px] lg:w-[1475px] xl:w-[1475px] 2xl:w-[1475px]"
         ref={slideBox}
       >
         {/*card */}
-        <div className="slideItem bg-[#E0DBCE] sActive overflow-hidden absolute   h-[100%] top-[-100px] w-[100%] shadow-2xl shadow-[#00000040] rounded-[10px]">
+        <div className="slideItem bg-[#E0DBCE] sActive overflow-hidden absolute   h-[100%] md:h-[100%] lg:h-[100%] xl:h-[100%] 2xl:h-[100%] top-[-100px] w-[100%] shadow-2xl shadow-[#00000040] rounded-[10px]">
           <span className="absolute z-[-7777] -top-24 left-0">
             <img src={mask} alt="" />
           </span>
           <div className="pl-[20px] md:pl-[180px] lg:pl-[180px] xl:pl-[180px] 2xl:pl-[180px] pt-[20px] md:pt-[44px] lg:pt-[44px] xl:pt-[44px] 2xl:pt-[44px] pr-[20px] md:pr-[60px] lg:pr-[60px] xl:pr-[60px] 2xl:pr-[60px] z-[7777] pb-80px">
             <div className="flex justify-between">
               <div className="flex">
-                <span className=" text-center block h-16 w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
-                <span className=" text-center block h-16 w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]  ml-3"></span>
+                <span className=" text-center block h-7 md:h-16 lg:h-16 xl:h-16 2xl:h-16 w-4 md:w-10 lg:w-10 xl:w-10 2xl:w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
+                <span className=" text-center block h-7 md:h-16 lg:h-16 xl:h-16 2xl:h-16 w-4 md:w-10 lg:w-10 xl:w-10 2xl:w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]  ml-2"></span>
               </div>
-              <div>
+              <div className="">
                 <img src={sliderLogo} alt="sliderLogo" />
               </div>
             </div>
-            <div className="pl-[10px] pt-3 sm:pt-0 md:pl-[100px] lg:pl-[100px] xl:pl-[100px] 2xl:pl-[100px]">
-              <p className="text-[18px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] font-medium capitalize font-artusiC pr-3 md:pr-24 lg:pr-24 xl:pr-24 2xl:pr-24 text-[#000000]">
+            <div className=" -mt-5 md:-mt-0 lg:-mt-0 xl:-mt-0 2xl:-mt-0 sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0 md:pl-[100px] lg:pl-[100px] xl:pl-[100px] 2xl:pl-[100px]">
+              <p className="pl-[50px] md:pl-0 lg:pl-0 xl:pl-0 2xl:0 text-[16px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] font-medium capitalize font-artusiC pr-4 md:pr-24 lg:pr-24 xl:pr-24 2xl:pr-24 text-[#000000]">
                 I really appreciate the hyper-realism and the way the quality of
                 the augmented reality truly reflects my brands DNA.
               </p>
-              <h4 className="font-bold text-[#F7381E] artusiG italic text-[18px] md:text-[30px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px] pt-[20px] md:pt-[42px] lg:pt-[42px] xl:pt-[42px] 2xl:pt-[42px] pb-2 md:pb-6 lg:pb-6 xl:pb-6 2xl:pb-6 ">
+              <h4 className="font-bold text-[#F7381E] artusiG italic text-[14px] md:text-[30px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px] pt-[20px] md:pt-[42px] lg:pt-[42px] xl:pt-[42px] 2xl:pt-[42px] pb-2 md:pb-6 lg:pb-6 xl:pb-6 2xl:pb-6 ">
                 Olubiyi Thomas
               </h4>
-              <h6 className="font-artusiC font-medium text-sm md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
+              <h6 className="font-artusiC font-medium text-xs md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
                 Founder of Olubiyi Thomas
               </h6>
-              <span className="block h-[9px] w-[160px] md:w-[230px] lg:w-[230px] xl:w-[230px] 2xl:w-[230px] bg-red-500 rounded-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
+              <span className="block h-[9px] w-[140px] md:w-[230px] lg:w-[230px] xl:w-[230px] 2xl:w-[230px] bg-red-500 rounded-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
             </div>
           </div>
         </div>
 
         {/*card */}
-        <div className="bg-[#E0DBCE] slideItem sActive absolute  h-[100%]  w-[100%]  rounded-[10px]  shadow-2xl shadow-[#00000040]  ">
+        <div className="bg-[#E0DBCE] slideItem sActive absolute h-[100%] md:h-[100%] lg:h-[100%] xl:h-[100%] 2xl:h-[100%]  w-[100%]  rounded-[10px]  shadow-2xl shadow-[#00000040]  ">
           <span className="absolute z-[-7777] top-0 md:-top-24 lg:-top-24 xl:-top-24 2xl:-top-24 left-0">
             <img src={mask} alt="" />
           </span>
           <div className="pl-[20px] md:pl-[180px] lg:pl-[180px] xl:pl-[180px] 2xl:pl-[180px] pt-[20px] md:pt-[44px] lg:pt-[44px] xl:pt-[44px] 2xl:pt-[44px] pr-[20px] md:pr-[60px] lg:pr-[60px] xl:pr-[60px] 2xl:pr-[60px] z-[7777] pb-80px">
             <div className="flex justify-between">
               <div className="flex">
-                <span className=" text-center block h-16 w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
-                <span className=" text-center block h-16 w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]  ml-3"></span>
+                <span className=" text-center block h-7 md:h-16 lg:h-16 xl:h-16 2xl:h-16 w-4 md:w-10 lg:w-10 xl:w-10 2xl:w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
+                <span className=" text-center block h-7 md:h-16 lg:h-16 xl:h-16 2xl:h-16 w-4 md:w-10 lg:w-10 xl:w-10 2xl:w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]  ml-3"></span>
               </div>
               <div>
                 <img src={sliderLogo} alt="sliderLogo" />
               </div>
             </div>
-            <div className="pl-[10px] pt-3 sm:pt-0 md:pl-[100px] lg:pl-[100px] xl:pl-[100px] 2xl:pl-[100px]">
-              <p className="text-[18px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] font-medium capitalize font-artusiC pr-3 md:pr-24 lg:pr-24 xl:pr-24 2xl:pr-24 text-[#000000]">
+            <div className="-mt-5 md:-mt-0 lg:-mt-0 xl:-mt-0 2xl:-mt-0 sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0 md:pl-[100px] lg:pl-[100px] xl:pl-[100px] 2xl:pl-[100px]">
+              <p className="pl-[50px] md:pl-0 lg:pl-0 xl:pl-0 2xl:0 text-[16px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] font-medium capitalize font-artusiC pr-4 md:pr-24 lg:pr-24 xl:pr-24 2xl:pr-24 text-[#000000]">
                 I really appreciate the hyper-realism and the way the quality of
                 the augmented reality truly reflects my brands DNA.
               </p>
               <h4 className="font-bold text-[#F7381E] artusiG italic text-[18px] md:text-[30px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px] pt-[20px] md:pt-[42px] lg:pt-[42px] xl:pt-[42px] 2xl:pt-[42px] pb-2 md:pb-6 lg:pb-6 xl:pb-6 2xl:pb-6 ">
                 Olubiyi Thomas
               </h4>
-              <h6 className="font-artusiC font-medium text-sm md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
+              <h6 className="font-artusiC font-medium text-xs md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
                 Founder of Olubiyi Thomas
               </h6>
-              <span className="block h-[9px] w-[160px] md:w-[230px] lg:w-[230px] xl:w-[230px] 2xl:w-[230px] bg-red-500 rounded-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
+              <span className="block h-[9px] w-[140px] md:w-[230px] lg:w-[230px] xl:w-[230px] 2xl:w-[230px] bg-red-500 rounded-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
             </div>
           </div>
         </div>
         {/*card */}
-        <div className="bg-[#E0DBCE] slideItem sActive absolute   h-[100%]  w-[100%]  shadow-2xl shadow-[#00000040] rounded-[10px]  ">
+        <div className="bg-[#E0DBCE] slideItem sActive absolute h-[100%] md:h-[100%] lg:h-[100%] xl:h-[100%] 2xl:h-[100%]  w-[100%]  rounded-[10px]  shadow-2xl shadow-[#00000040]  ">
           <span className="absolute z-[-7777] top-0 md:-top-24 lg:-top-24 xl:-top-24 2xl:-top-24 left-0">
             <img src={mask} alt="" />
           </span>
           <div className="pl-[20px] md:pl-[180px] lg:pl-[180px] xl:pl-[180px] 2xl:pl-[180px] pt-[20px] md:pt-[44px] lg:pt-[44px] xl:pt-[44px] 2xl:pt-[44px] pr-[20px] md:pr-[60px] lg:pr-[60px] xl:pr-[60px] 2xl:pr-[60px] z-[7777] pb-80px">
             <div className="flex justify-between">
               <div className="flex">
-                <span className=" text-center block h-16 w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
-                <span className=" text-center block h-16 w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]  ml-3"></span>
+                <span className=" text-center block h-7 md:h-16 lg:h-16 xl:h-16 2xl:h-16 w-4 md:w-10 lg:w-10 xl:w-10 2xl:w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
+                <span className=" text-center block h-7 md:h-16 lg:h-16 xl:h-16 2xl:h-16 w-4 md:w-10 lg:w-10 xl:w-10 2xl:w-10 bg-red-500 rounded-br-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]  ml-3"></span>
               </div>
               <div>
                 <img src={sliderLogo} alt="sliderLogo" />
               </div>
             </div>
-            <div className="pl-[10px] pt-3 sm:pt-0 md:pl-[100px] lg:pl-[100px] xl:pl-[100px] 2xl:pl-[100px]">
-              <p className="text-[18px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] font-medium capitalize font-artusiC pr-3 md:pr-24 lg:pr-24 xl:pr-24 2xl:pr-24 text-[#000000]">
+            <div className="-mt-5 md:-mt-0 lg:-mt-0 xl:-mt-0 2xl:-mt-0 sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0 md:pl-[100px] lg:pl-[100px] xl:pl-[100px] 2xl:pl-[100px]">
+              <p className="pl-[50px] md:pl-0 lg:pl-0 xl:pl-0 2xl:0 text-[16px] md:text-[48px] lg:text-[48px] xl:text-[48px] 2xl:text-[48px] font-medium capitalize font-artusiC pr-4 md:pr-24 lg:pr-24 xl:pr-24 2xl:pr-24 text-[#000000]">
                 I really appreciate the hyper-realism and the way the quality of
                 the augmented reality truly reflects my brands DNA.
               </p>
               <h4 className="font-bold text-[#F7381E] artusiG italic text-[18px] md:text-[30px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px] pt-[20px] md:pt-[42px] lg:pt-[42px] xl:pt-[42px] 2xl:pt-[42px] pb-2 md:pb-6 lg:pb-6 xl:pb-6 2xl:pb-6 ">
                 Olubiyi Thomas
               </h4>
-              <h6 className="font-artusiC font-medium text-sm md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
+              <h6 className="font-artusiC font-medium text-xs md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
                 Founder of Olubiyi Thomas
               </h6>
-              <span className="block h-[9px] w-[160px] md:w-[230px] lg:w-[230px] xl:w-[230px] 2xl:w-[230px] bg-red-500 rounded-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
+              <span className="block h-[9px] w-[140px] md:w-[230px] lg:w-[230px] xl:w-[230px] 2xl:w-[230px] bg-red-500 rounded-[100%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] to-[112%] from-[-26%] from-[#000000]"></span>
             </div>
           </div>
         </div>
         {/* arrows */}
       </div>
-      <div className="flex absolute bottom-[180px] md:bottom-[210px] lg:bottom-[210px] xl:bottom-[210px] 2xl:bottom-[210px] right-[60px] md:right-[360px]  lg:right-[120px] z-[9999]">
+      <div className="flex absolute bottom-[80px] md:bottom-[210px] lg:bottom-[210px] xl:bottom-[210px] 2xl:bottom-[210px] right-[60px] md:right-[360px]  lg:right-[120px] z-[9999]">
         <IoIosArrowRoundForward
           onClick={() => showSlider("prev")}
-          className="text-red-500 border border-[#f45252] h-8 md:h-20 lg:h-20 xl:h-20 2xl:h-20 w-8 md:w-20 lg:w-20 xl:w-20 2xl:w-20 rounded-full text-[25px] mr-5 "
+          className=" border border-[#f45252] h-8 md:h-20 lg:h-20 xl:h-20 2xl:h-20 w-8 md:w-20 lg:w-20 xl:w-20 2xl:w-20 rounded-full text-[25px] mr-5 "
         />
         <IoIosArrowRoundBack
           onClick={() => showSlider("next")}
-          className="text-red-500 border border-[#f45252] h-8 md:h-20 lg:h-20 xl:h-20 2xl:h-20 w-8 md:w-20 lg:w-20 xl:w-20 2xl:w-20 rounded-full  text-[25px]"
+          className=" border border-[#f45252] h-8 md:h-20 lg:h-20 xl:h-20 2xl:h-20 w-8 md:w-20 lg:w-20 xl:w-20 2xl:w-20 rounded-full  text-[25px]"
         />
       </div>
     </section>
   );
-}
-
-{
-  /* <h2 className="font-artusiG  leading-[120%] pb-7 text-center text-[60px] text-[#FFFFFF]">
-What Our
-<span className="text-[#F7381E] font-bold italic">Clients Say</span>
-</h2>
-<p className=" font-artusi max-w-[666px] m-auto text-center text-lg leading-[30px] px-8 text-[#8E8E8E]">
-Don't just take our word for it, see what some of our first clients have
-said, partnering with showcase X. on
-</p> */
 }

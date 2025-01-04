@@ -38,7 +38,7 @@ export default function Brand() {
   return (
     <>
       <section className="bg-black">
-        <div className="bg-black top-[-230px] w-[102%] -left-2 md:-left-5 lg:-left-5 xl:-left-5 2xl:-left-5 items-center rounded-t-[20%] relative md:top-[-120px] lg:top-[-200px] xl:top-[-260px] 2xl:top-[-120px] ">
+        <div className="bg-black top-[-10px] w-[102%] -left-2 md:-left-5 lg:-left-5 xl:-left-5 2xl:-left-5 items-center rounded-t-[20%] relative md:top-[-120px] lg:top-[-200px] xl:top-[-260px] 2xl:top-[-120px] ">
           <div className="brand md:border-t-[2px] rounded-b-[40%] border-b-[2px] border-[#303030] justify-around items-center md:rounded-t-[20%] lg:rounded-t-[20%] xl:rounded-t-[20%] 2xl:rounded-t-[20%] md:rounded-b-[20%] lg:rounded-b-[20%] xl:rounded-b-[20%] 2xl:rounded-b-[20%]  overflow-hidden">
             <div className="brand-slider">
               <Slider {...settings}>

@@ -1,6 +1,6 @@
 import React from "react";
 import AboutHero from "../component/aboutHero";
-import Brand from "../component/brand";
+import BrandAbout from "../component/brandAbout";
 import Mission from "../component/mission";
 import Foundingteam from "../component/foundingteam";
 import Journey from "../component/journey";
@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div>
       <AboutHero />
-      <Brand />
+      <BrandAbout />
       <Mission/>
       <Foundingteam/>
       <Journey/>

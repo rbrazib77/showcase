@@ -45,13 +45,13 @@ export default function Faqs() {
   };
   return (
     <>
-      <div className="bg-black pb-[80px] md:pb-[334px] lg:pb-[334px] xl:pb-[334px] 2xl:pb-[334px]">
+      <div className="bg-black pb-[30px] md:pb-[334px] lg:pb-[334px] xl:pb-[334px] 2xl:pb-[334px]">
         <div className="md:pl-24 lg:pl-24 xl:pl-24 2xl:pl-24">
           <div className="">
             <div className="md:flex lg:flex xl:flex 2xl:flex items-center">
               <div className="md:w-[783px] lg:w-[783px] xl:w-[783px] 2xl:w-[783px] md:mr-20 lg:mr-20 xl:mr-20 2xl:mr-20">
                 <div className="">
-                  <h2 className="text-white font-helvetica font-medium text-6xl  leading-[120%] pb-14 tracking-[1%]">
+                  <h2 className="text-white pl-10 md:pl-0 lg:pl-0 xl:pl-0 2xl:pl-0 font-helvetica font-medium text-[28px] md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl leading-[120%] pb-10 md:pb-14 lg:pb-14 2xl:pb-14 xl:pb-14 tracking-[1%]">
                     Frequently Ask{" "}
                     <span className="text-[#F7381E] font-artusiG italic">
                       Questions
@@ -69,11 +69,11 @@ export default function Faqs() {
                   {data.map((item, i) => (
                     <motion.div
                       variants={childAnimateX}
-                      className="bg-[#0F0F0F] shadow-lg p-6 last:border-b-0 border-b-2 border-[#2C2C2C]  rounded mb-5"
+                      className="bg-[#0F0F0F] shadow-lg p-6 last:border-b-0 border-b-2 border-[#2C2C2C]  rounded  md:mb-5 xl:mb-5 lg:mb-5 2xl:mb-5 "
                     >
                       <h4
                         onClick={() => handleAccordion(i)}
-                        className="cursor-pointer text-[#FFFFFF] text-2xl font-medium font-helvetica flex justify-between "
+                        className="cursor-pointer text-[#FFFFFF] text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-medium font-helvetica flex justify-between "
                       >
                         <span className="flex gap-3">
                           {faqs === i && (
@@ -102,7 +102,7 @@ export default function Faqs() {
                       <div
                         className={`${faqs === i ? "faq expanded " : "faq"}`}
                       >
-                        <p className="accordine font-helvetica text-[18px] text-[#8F8F8F]  pt-6 font-normal pr-12">
+                        <p className="accordine font-helvetica md:text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] text-[15px] text-[#8F8F8F]  pt-6 font-normal pr-12">
                           {item.answere}{" "}
                         </p>
                       </div>
@@ -110,7 +110,7 @@ export default function Faqs() {
                   ))}
                 </motion.div>
               </div>
-              <div className="">
+              <div className="  mt-[30px] md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
                 <picture>
                   <img src={faqimg} alt="" />
                 </picture>
