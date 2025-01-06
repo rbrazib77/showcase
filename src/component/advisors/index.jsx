@@ -38,7 +38,7 @@ const index = () => {
   };
   return (
     <section className="bg-black py-10 md:py-32 lg:py-32 xl:py-32 2xl:py-32 ">
-      <div className="md:cus-container lg:cus-container xl:cus-container 2xl:cus-container">
+      <div className="max-w-screen-2xl mx-auto">
         <h2 className="text-[#FFFFFF] font-helvetica font-medium leading-[120%] pb-6 text-center text-[28px] md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl ">
           Advisors
         </h2>

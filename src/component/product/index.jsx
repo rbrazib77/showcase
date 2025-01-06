@@ -15,7 +15,7 @@ export default function Product() {
         <span className="absolute top-24 right-0 hidden lg:block xl:block 2xl:block md:block">
           <img src={p_shap} alt="" />
         </span>
-        <div className="px-[20px] lg:px-[100px] md:px-[100px] xl:px-[100px] 2xl:px-[100px]">
+        <div className="max-w-screen-2xl mx-auto">
           <div className="md:flex lg:flex xl:flex 2xl:flex md:flex-wrap-reverse lg:flex-wrap-reverse xl:flex-wrap-reverse 2xl:flex-wrap-reverse flex-row-reverse md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-between items-center">
             <div className="lg:w-1/2">
               <div className="txt-box">
@@ -67,7 +67,7 @@ export default function Product() {
           </div>
           <div className="lg:flex mt-12 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20">
             <div className="lg:w-1/2 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 hidden md:block lg:block xl:block 2xl:block">
-              <div className="img-box ">
+              <div className="img-box">
                 <div className="slider-box">
                   <picture>
                     <img

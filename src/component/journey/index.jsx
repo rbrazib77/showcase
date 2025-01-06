@@ -23,7 +23,7 @@ const index = () => {
 
   return (
     <section className="bg-black">
-      <div className="md:cus-container lg:cus-container xl:cus-container 2xl:cus-container">
+      <div className="max-w-screen-2xl mx-auto">
         <h2 className="text-[#FFFFFF] font-helvetica font-medium pt-10 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 leading-[141%] pb-0 md:pb-6 lg:pb-6 xl:pb-6 2xl:pb-6 text-center text-[28px] md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl ">
           Our journey <span className="text-[#F7381E] italic">So Far</span>
         </h2>

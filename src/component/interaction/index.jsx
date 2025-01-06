@@ -4,14 +4,14 @@ import interaction from "../../assets/images/interaction/interaction.png";
 const index = () => {
   return (
     <section className="bg-[#191919]  py-[50px] md:py-[174px] lg:py-[174px] xl:py-[174px] 2xl:py-[174px]">
-      <div className="md:px-[160px] lg:px-[160px] xl:px-[160px] 2xl:px-[160px]">
-        <div className="lg:flex xl:flex 2xl:flex items-center">
-          <div className="w-[350px] md:w-[815px] lg:w-[815px] xl:w-[815px] 2xl:w-[815px] m-auto">
+      <div className="max-w-screen-2xl mx-auto">
+        <div className="md:flex justify-between items-center">
+          <div className="">
             <picture>
               <img src={interaction} className="w-full" alt="" />
             </picture>
           </div>
-          <div className="w-[500px] md:w-[623px] lg:w-[623px] xl:w-[623px] 2xl:w-[623px] pl-[30px] md:pl-[110px] lg:pl-[110px] xl:pl-[110px] 2xl:pl-[110px] ">
+          <div className="w-[500px]  ">
             <h2 className="font-artusiG font-bold italic text-2xl md:text-[80px] lg:text-[80px] xl:text-[80px] 2xl:text-[80px] leading-[100%] md:leading-[160%] lg:leading-[160%] xl:leading-[160%] 2xl:leading-[160%] text-white pb-[14px] md:pb-[49px] lg:pb-[49px] xl:pb-[49px] 2xl:pb-[49px]">
               Interaction
             </h2>

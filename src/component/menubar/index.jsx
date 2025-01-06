@@ -45,7 +45,7 @@ export default function Menubar() {
   return (
     <>
       <nav className="py-2 md:py-8 absolute top-10 w-full z-[99999]">
-        <div className="cus-container">
+        <div className="max-w-screen-2xl mx-auto">
           <div className="md:flex justify-between items-center">
             <div className="inline-block md:w-1/6 ">
               <div className="logo">
