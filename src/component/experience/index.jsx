@@ -11,11 +11,9 @@ const index = () => {
               <img src={experience} className="w-full" alt="" />
             </picture>
           </div>
-<<<<<<< HEAD
+
           <div className="w-[500px]">
-=======
-          <div className="w-[500px] md:w-[623px] lg:w-[623px] xl:w-[623px] 2xl:w-[623px] pl-[30px] md:pl-[162px] lg:pl-[162px] xl:pl-[162px] 2xl:pl-[162px]">
->>>>>>> origin/main
+        
             <h2 className="font-artusiG font-bold italic text-2xl md:text-[80px] lg:text-[80px] xl:text-[80px] 2xl:text-[80px] leading-[100%] md:leading-[160%] lg:leading-[160%] xl:leading-[160%] 2xl:leading-[160%] text-white pb-[14px] md:pb-[49px] lg:pb-[49px] xl:pb-[49px] 2xl:pb-[49px]">
               Experience
             </h2>
