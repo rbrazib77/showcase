@@ -1,26 +1,20 @@
 import React, { useRef, useState } from "react";
-import { FaPlay } from "react-icons/fa";
 import journey from "../../assets/images/journey/journey.png";
 const index = () => {
   const [isOpen, setOpen] = useState(false);
   const videoRef = useRef(null);
 
 
-  const handleVideoClick = () => {
-    const video = videoRef.current;
-    if (video.paused) {
-      video.play();
-      setOpen(!isOpen);
-    } else {
-      video.pause();
-      setOpen(!isOpen);
-    }
-  };
-
-  
-
-
-
+  // const handleVideoClick = () => {
+  //   const video = videoRef.current;
+  //   if (video.paused) {
+  //     video.play();
+  //     setOpen(!isOpen);
+  //   } else {
+  //     video.pause();
+  //     setOpen(!isOpen);
+  //   }
+  // };
   return (
     <section className="bg-black">
       <div className="max-w-screen-2xl mx-auto">
