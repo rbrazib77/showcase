@@ -47,9 +47,15 @@ export default function HeroSection() {
             </video>
           </div>
         </Slider>
+<<<<<<< HEAD
         <div className=" content absolute top-24 md:-top-10 w-full">
           <div className=" hidden md:block lg:block xl:block 2xl:block absolute top-[-10px] md:top-[250px] lg:top-[250px] xl:top-[250px] 2xl:top-[250px] !right-[300px]">
             <div className="max-w-screen-2xl mx-auto">
+=======
+        <div className="content absolute top-24 md:-top-10 w-full">
+          <div className=" hidden md:block lg:block xl:block 2xl:block absolute top-[-10px] md:top-[250px] lg:top-[250px] xl:top-[250px] 2xl:top-[250px] right-0">
+            <div className="cus-container">
+>>>>>>> origin/main
               <div>
                 <NavLink target="_blank" to="https://twitter.com/ShowcaseX_/">
                   <FaTwitter className="h-10 w-10 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:h-16 2xl:w-16 p-2 md:p-4 lg:p-4 xl:p-4 2xl:p-4 text-[24px] border border-[#E0DBCE]  rounded-full text-[#FFFFFF] text-center" />
@@ -73,10 +79,17 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="max-w-screen-2xl mx-auto hidden md:block lg:block xl:block 2xl:block">
             <div className="md:flex justify-between">
               <div className=" md:w-3/5 lg:w-2/5 mt-7 sm:mt-0">
                 <div className="box p-5 sm:p-0 inline-block w-[360px] md:w-[600px] lg:w-[600px] xl:w-[600px] 2xl:w-[600px] bg-gradient-to-t to-[#6767675e] via-[#74747433] from-[#ffffff22] xl:py-9 xl:px-[100] rounded-2xl  backdrop-blur-sm border border-[#676767] mt-32 sm:mt-[50%] md:mt-[80%] md:mr-1 lg:mr-0 lg:mt-[85%] overflow-hidden">
+=======
+          <div className="cus-container hidden md:block lg:block xl:block 2xl:block">
+            <div className="md:flex justify-between">
+              <div className=" md:w-3/5 lg:w-2/5 mt-7 sm:mt-0">
+                <div className="box p-5 sm:p-0 inline-block w-[360px] md:w-[600px] lg:w-[600px] xl:w-[600px] 2xl:w-[600px] bg-gradient-to-t to-[#6767675e] via-[#74747433] from-[#ffffff22] xl:py-9 xl:px-[100] rounded-2xl sm:p-8 backdrop-blur-sm border border-[#676767] mt-32 sm:mt-[50%] md:mt-[80%] md:mr-1 lg:mr-0 lg:mt-[85%] overflow-hidden">
+>>>>>>> origin/main
                   <span className="blur-shap w-96 h-96  block absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]  bg-[#cbcbcbdb] rounded-[100%]"></span>
                   <h4 className="font-helvetica font-medium text-4xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-white leading-[56px]">
                     As{" "}

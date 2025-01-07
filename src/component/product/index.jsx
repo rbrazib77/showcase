@@ -20,7 +20,11 @@ export default function Product() {
             <div className="lg:w-1/2">
               <div className="txt-box">
                 <h4 className="font-helvetica max-w-[250px] lg:max-w-[741px] md:max-w-[741px] xl:max-w-[741px] 2xl:max-w-[741px] lg:pr-5 font-medium leading-[124%]  text-[28px]  md:text-[62px] lg:text-[62px] xl:text-[80px] 2xl:text-[80px] text-white md:leading-[80px] lg:leading-[80px] xl:leading-[80px] 2xl:leading-[80px]">
+<<<<<<< HEAD
                   The
+=======
+                  The And one
+>>>>>>> origin/main
                   <span className="font-artusiG font-normal italic">
                     {" "}
                     problem{" "}
@@ -67,7 +71,11 @@ export default function Product() {
           </div>
           <div className="lg:flex mt-12 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20">
             <div className="lg:w-1/2 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 hidden md:block lg:block xl:block 2xl:block">
+<<<<<<< HEAD
               <div className="img-box">
+=======
+              <div className="img-box ">
+>>>>>>> origin/main
                 <div className="slider-box">
                   <picture>
                     <img
